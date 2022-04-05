@@ -75,16 +75,16 @@ Neural Networks, Physics-Informed Neural Networks, Gaussian Processes
 Quantum Harmonic Oscillator is a representative system commonly used in
 QM courses. In the 1D case, the Hamiltonian is (atomic units)
 
-$\hat{H_x}=-\frac{1}{2}\frac{\partial^{2}}{\partial x^{2}}+\frac{\omega^{2}}{2}x^{2}$
+$$\hat{H_x}=-\frac{1}{2}\frac{\partial^{2}}{\partial x^{2}}+\frac{\omega^{2}}{2}x^{2}$$
 
 The analytical solution $\psi(x,t) \in \mathbb{C}$ is
-$\psi_{m,n}(x,t) = \frac{1}{\sqrt{2}}\left( e^{\left(-i E_m t\right)}\phi_m(x) + e^{\left(-i E_n t\right)}\phi_n(x)\right)$
+$$\psi_{m,n}(x,t) = \frac{1}{\sqrt{2}}\left( e^{\left(-i E_m t\right)}\phi_m(x) + e^{\left(-i E_n t\right)}\phi_n(x)\right)$$
 where $\psi_{m,n}$ is the wavefunction for a QHO consisting of the
 superposition of eigenstates $\phi_m$ and $\phi_n$ with $E_i$ being the
 energy level of state $\phi_i$.
 
-$\phi_0(x) = \sqrt[4]{\frac{\omega}{\pi}}\exp\left(-\frac{\omega x^2}{2}\right)$
-$\phi_n(x) = \phi_0(x) \frac{1}{\sqrt{2^n n!}}Her_n(\sqrt{\omega}x)\exp\left(-i E_n t\right)$
+$$\phi_0(x) = \sqrt[4]{\frac{\omega}{\pi}}\exp\left(-\frac{\omega x^2}{2}\right)$$
+$$\phi_n(x) = \phi_0(x) \frac{1}{\sqrt{2^n n!}}Her_n(\sqrt{\omega}x)\exp\left(-i E_n t\right)$$
 where $Her_n(y)$ is the $n$th Hermite polynomial, and phase
 $\exp\left(-i E_n t\right)$ where $E_n = (n+\frac{1}{2})\omega$
 
