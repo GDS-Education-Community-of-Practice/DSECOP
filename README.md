@@ -23,8 +23,9 @@ Karan Shah
 
 <img src="https://render.githubusercontent.com/render/math?math={ \hat{H} \psi(\mathbf{r})= E \psi(\mathbf{r})}#gh-light-mode-only">
 <img src="https://render.githubusercontent.com/render/math?math={\color{white} \hat{H} \psi(\mathbf{r})= E \psi(\mathbf{r})}#gh-dark-mode-only">
- where <img src="https://render.githubusercontent.com/render/math?math={\hat{H}}#gh-light-mode-only">
-<img src="https://render.githubusercontent.com/render/math?math={\color{white}\hat{H}}#gh-dark-mode-only">  is the Hamiltonian and $E$ is the total energy of the system.
+ where <img src="https://render.githubusercontent.com/render/math?math={\hat{H}}#gh-light-mode-only" style="float:right">
+<img src="https://render.githubusercontent.com/render/math?math={\color{white}\hat{H}}#gh-dark-mode-only" style="float:right">  is the Hamiltonian and  <img src="https://render.githubusercontent.com/render/math?math={E}#gh-light-mode-only" style="float:right">
+<img src="https://render.githubusercontent.com/render/math?math={\color{white}E}#gh-dark-mode-only" style="float:right">  is the total energy of the system.
 
 - Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
 ![PINN architecture](fig/PINN_diagrams.png){#fig:pinn
