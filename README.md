@@ -12,10 +12,8 @@ Karan Shah
 -   **Which course(s) might these modules plug into?**
 	-   Quantum Mechanics
 -   **Physics and the data science learning goal(s)**
-	-   Physics: The Schr\"odinger Equation (SE) is an important part of any Quantum Mechanics course and students are expected to solve it for increasingly complex systems throughout the course. In this module, I introduce Physics-Informed Neural Networks (PINNs) and demonstrate the effectiveness of numerical techniques and deep learning for solving the SE with different potentials even in the absence of analytical solutions. This is especially important because SE becomes analytically intractable for even the smallest practical systems and formulations such as Density Functional Theory are used to simulate such systems. The time dependent Schrödinger Equation (TDSE) is (in atomic units)
+	-   Physics: The Schrödinger Equation (SE) is an important part of any Quantum Mechanics course and students are expected to solve it for increasingly complex systems throughout the course. In this module, I introduce Physics-Informed Neural Networks (PINNs) and demonstrate the effectiveness of numerical techniques and deep learning for solving the SE with different potentials even in the absence of analytical solutions. This is especially important because SE becomes analytically intractable for even the smallest practical systems and formulations such as Density Functional Theory are used to simulate such systems. The time dependent Schrödinger Equation (TDSE) is (in atomic units)
 
-    <!-- <img src="https://render.githubusercontent.com/render/math?math={eqn}#gh-light-mode-only">
-<img src="https://render.githubusercontent.com/render/math?math={\color{white}eqn}#gh-dark-mode-only"> -->
 
 <img src="https://render.githubusercontent.com/render/math?math={ \hat{H} \psi(\mathbf{r}, t)=i \frac{\partial \psi(\mathbf{r}, t)}{\partial t}}#gh-light-mode-only">
 <img src="https://render.githubusercontent.com/render/math?math={\color{white} \hat{H} \psi(\mathbf{r}, t)=i \frac{\partial \psi(\mathbf{r}, t)}{\partial t}}#gh-dark-mode-only">
