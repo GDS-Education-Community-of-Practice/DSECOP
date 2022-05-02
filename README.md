@@ -14,8 +14,8 @@ Karan Shah
 -   **Physics and the data science learning goal(s)**
 	-   Physics: The Schr\"odinger Equation (SE) is an important part of any Quantum Mechanics course and students are expected to solve it for increasingly complex systems throughout the course. In this module, I introduce Physics-Informed Neural Networks (PINNs) and demonstrate the effectiveness of numerical techniques and deep learning for solving the SE with different potentials even in the absence of analytical solutions. This is especially important because SE becomes analytically intractable for even the smallest practical systems and formulations such as Density Functional Theory are used to simulate such systems. The time dependent Schrödinger Equation (TDSE) is (in atomic units)
 
-    <img src="https://render.githubusercontent.com/render/math?math={eqn}#gh-light-mode-only">
-<img src="https://render.githubusercontent.com/render/math?math={\color{white}eqn}#gh-dark-mode-only">
+    <!-- <img src="https://render.githubusercontent.com/render/math?math={eqn}#gh-light-mode-only">
+<img src="https://render.githubusercontent.com/render/math?math={\color{white}eqn}#gh-dark-mode-only"> -->
 
 <img src="https://render.githubusercontent.com/render/math?math={ \hat{H} \psi(\mathbf{r}, t)=i \frac{\partial \psi(\mathbf{r}, t)}{\partial t}}#gh-light-mode-only">
 <img src="https://render.githubusercontent.com/render/math?math={\color{white} \hat{H} \psi(\mathbf{r}, t)=i \frac{\partial \psi(\mathbf{r}, t)}{\partial t}}#gh-dark-mode-only">
@@ -27,9 +27,8 @@ Karan Shah
 <img src="https://render.githubusercontent.com/render/math?math={\color{white}\hat{H}}#gh-dark-mode-only">  is the Hamiltonian and $E$ is the total energy of the system.
 
 - Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
-![PINN architecture](fig/PINN_diagrams.pdf){#fig:pinn
+![PINN architecture](fig/PINN_diagrams.png){#fig:pinn
 width="\\linewidth"}
-\end{figure}
 -   **Estimated amount of time these might take a student to complete**: 6 hours
 -   **Estimated amount of time these might take a professor to teach**: 2 hours
 -   **Pre-requisites:** 
