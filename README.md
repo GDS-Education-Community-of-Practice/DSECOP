@@ -15,7 +15,7 @@ Karan Shah
 	-   Physics: The Schrödinger Equation (SE) is an important part of any Quantum Mechanics course and students are expected to solve it for increasingly complex systems throughout the course. In this module, I introduce Physics-Informed Neural Networks (PINNs) and demonstrate the effectiveness of numerical techniques and deep learning for solving the SE with different potentials even in the absence of analytical solutions. This is especially important because SE becomes analytically intractable for even the smallest practical systems and formulations such as Density Functional Theory are used to simulate such systems. T
 
 - Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
-![PINN architecture](fig/PINN_diagrams.png)
+![PINN architecture](Lessons/fig/PINN_diagrams.png)
 -   **Estimated amount of time these might take a student to complete**: 6 hours
 -   **Estimated amount of time these might take a professor to teach**: 2 hours
 -   **Pre-requisites:** 
