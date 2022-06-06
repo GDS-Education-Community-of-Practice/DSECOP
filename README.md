@@ -11,9 +11,13 @@
 
 ## Pre-requisities
 * A basic knowledge of the Python programming language is assumed along with a basic knowledge of the libraries NumPy and Matplotlib.
+* The ability to write down the net force equation for a given system and the knowledge of Newton's second law as well as the relationship between position, velocity, and acceleration.
+* A basic knowledge of derivatives (including partial derivatives), integrals, and some basic matrix-vector manipulations.  Knowledge of differential equation is not assumed.
 
-### Python Packages
-The Jupyter notebooks provided in this module assume that the following packages are installed.  These can be easily installed through any Python package manager such as pip3 or conda.
+### Python Prerequisites
+This module runs in Juupyter notebooks using the Python 3 programming languages.  Both of these need to be installed on a computer for these notebooks to run, or the notebooks can also be run on Google Colab without any local installations needed.  A link to the Google Colab versions of the noteboooks is provided at the top of each notebook. 
+
+The Jupyter notebooks provided in this module assume that the following packages are installed.  These can be easily installed through any Python package manager such as pip3 or conda or come by default if using Google Colab.
 * NumPy
 * Matplotlib
 * Autograd
