@@ -1,2 +1,22 @@
 # Solving Differential Equations in Classical Mechanics with Neural Networks
-This repository contains data science educational materials developed by DSECOP Fellows.
+
+## Table of Contents
+
+## Summary of Module
+
+## Pre-requisities
+
+## Learning Goals
+
+### Physics
+
+### Data Science
+
+## Suggested Course to Plug Into
+
+## Time Needed for Students to Complete the Assignments
+
+## Time Needed for Professors to Teach the Material
+
+## References
+
