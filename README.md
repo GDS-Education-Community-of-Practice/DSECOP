@@ -11,9 +11,13 @@
 
 ## Pre-requisities
 * A basic knowledge of the Python programming language is assumed along with a basic knowledge of the libraries NumPy and Matplotlib.
+* The ability to write down the net force equation for a given system and the knowledge of Newton's second law as well as the relationship between position, velocity, and acceleration.
+* A basic knowledge of derivatives (including partial derivatives), integrals, and some basic matrix-vector manipulations.  Knowledge of differential equation is not assumed.
 
-### Python Packages
-The Jupyter notebooks provided in this module assume that the following packages are installed.  These can be easily installed through any Python package manager such as pip3 or conda.
+### Python Prerequisites
+This module runs in Juupyter notebooks using the Python 3 programming languages.  Both of these need to be installed on a computer for these notebooks to run, or the notebooks can also be run on Google Colab without any local installations needed.  A link to the Google Colab versions of the noteboooks is provided at the top of each notebook. 
+
+The Jupyter notebooks provided in this module assume that the following packages are installed.  These can be easily installed through any Python package manager such as pip3 or conda or come by default if using Google Colab.
 * NumPy
 * Matplotlib
 * Autograd
@@ -23,8 +27,15 @@ The Jupyter notebooks provided in this module assume that the following packages
 ## Learning Goals
 
 ### Physics
+* Be able to rewrite Newton's second law as a second order differential equation for the motion of an object
+* Be able to write a Python code that solves the second order differential equation for the position of the object using Euler's method, the Euler-Cromer method, and the Velocity-Verlet Method
 
 ### Data Science
+* Be able to explain how a neural network functions, including the flow of data through the network and the mathematical model for a neuron in the network
+* Be able to create a small neural network by hand using Python programming and the autograd Python library.
+* Be able to apply a neural network to model a given data set
+* Be able to understand and explain how a neural network can be used to solve a differential equation
+* Be able to edit a code for a neural network that solves a differential equation so that the parameters of the systems or different or the differnetial equation is different    
 
 ## Suggested Course to Plug Into
 
