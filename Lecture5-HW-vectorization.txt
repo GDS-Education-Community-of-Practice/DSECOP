@@ -1,0 +1,12 @@
+Planet		Temperature [K]		semi-Major Axis [A.U.]	Hot-Jupiter or not	
+
+Earth		165			1.00				0		
+HAT-P-1b		1322			0.055				1
+Saturn		134			9.55				0
+TrEs-4b		1782			0.05				1
+Venus		737			0.73				0
+WASP-12b		3128			0.023				1
+Kepler-7b	1540			0.62				1
+Mercury		740			0.38				0
+Jupiter		165			5.20				0
+CoRoT-1b		1898			0.02				1
