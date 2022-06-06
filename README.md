@@ -23,8 +23,15 @@ The Jupyter notebooks provided in this module assume that the following packages
 ## Learning Goals
 
 ### Physics
+* Be able to rewrite Newton's second law as a second order differential equation for the motion of an object
+* Be able to write a Python code that solves the second order differential equation for the position of the object using Euler's method, the Euler-Cromer method, and the Velocity-Verlet Method
 
 ### Data Science
+* Be able to explain how a neural network functions, including the flow of data through the network and the mathematical model for a neuron in the network
+* Be able to create a small neural network by hand using Python programming and the autograd Python library.
+* Be able to apply a neural network to model a given data set
+* Be able to understand and explain how a neural network can be used to solve a differential equation
+* Be able to edit a code for a neural network that solves a differential equation so that the parameters of the systems or different or the differnetial equation is different    
 
 ## Suggested Course to Plug Into
 
