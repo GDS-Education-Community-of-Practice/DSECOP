@@ -1,7 +1,7 @@
 This repository contains data science educational materials developed by DSECOP Fellows.
 
 
-Particle physics provides a natural avenue for applications of data science, as cutting-edge experimentatal research is so data-rich. As an example: at the Large Hadron Collider (LHC) in 2017, protons were smashed together to produce 1 billion collisons per second [1]. These collisions produced hundreds of daughter quarks and gluons and leptons, which then collapsed to form bound states that were picked up by the detectors. Proper "detection" required storage of the particle's energy, momenta, and charge. * footnote
+Particle physics provides a natural avenue for applications of data science, as a large portion of cutting-edge experimentatal research is data driven. One abundant source of particle collision data is the Large Hadron Collider (LHC): in 2017, protons at the LHC were smashed together at astounding rates to produce 1 billion collisons per second [1]. These collisions produced hundreds of daughter quarks and gluons and leptons, which then collapsed to form bound states that were picked up by the detectors. Proper "detection" required storage of the particle's energy, momenta, and charge. * footnote
 
 Sum this slew of data over the ~7 year runtime of the LHC, we're left with on the order of hundreds of petabytes of data. That's enough to fill about 1.2 million Blu-ray discs, i.e. 250 years of HD video [1]
 
