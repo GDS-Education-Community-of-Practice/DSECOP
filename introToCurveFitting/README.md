@@ -54,14 +54,14 @@ Estimated time to complete: 60 - 90 minutes
 
 Several datasets are provided to accopany these modules. 
 
-For the in-class modules, we provide two CSV .txt files (```.txt``` and ```.txt```) containing a small sample (~1000) of Poisson distributed values, meant to represent the number of clicks heard per minute from a Geiger counter placed near the sample.
+For the in-class modules, we provide two CSV ```.txt``` files (```geiger_counts_A.txt``` and ```geiger_counts_B.txt```) containing a small sample (~1000) of Poisson distributed values, meant to represent the number of clicks heard per minute from a Geiger counter placed near the sample.
 
 For the quiz questions, we provide
 
-For the homework, we provide
+For the homework, we provide a file ```ee_collisions.txt``` containing a sample (xx) of simulated $ee \rightarrow abcd$ collisions. The dataset contains four-momenta and charge information for each daughter particle.
 
 
-## Which course(s) might these modules plug into?
+## What courses might these modules accompany?
 
 These modules might be shown in the first two weeks of an undergraduate laboratory course. Additionally, the homework could be given as a standalone assignment for an undergraduate Particle Physics course.
 
@@ -70,4 +70,5 @@ These modules might be shown in the first two weeks of an undergraduate laborato
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
 - [ ] Module 3: Confidence Intervals
 - [ ] Module 3: Built-in ```numpy```, ```scipy``` functions for goodness-of-fit
+- [ ] Module 4: (From scratch) deep learning Higgs detection
 
