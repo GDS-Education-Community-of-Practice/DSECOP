@@ -60,7 +60,7 @@ For the quiz questions, we provide a file ```quiz_dataset.txt`` of a generic sig
 
 We provide the notebook ```data_generation.ipynb``` so that instructors can generate these three datasets with their own parameters.
 
-For the homework, we provide a file ```ee_collisions.txt``` containing a sample (xx) of simulated $ee \rightarrow abcd$ collisions. The dataset contains four-momenta and charge information for each daughter particle.
+For the homework, we provide a file ```ee_collisions.txt``` containing a sample of 10,000 simulated $ee \rightarrow abcd$ collisions. The dataset contains four-momenta and charge information for each daughter particle. We provide the notebook ```homework_dataset_generation.ipynb``` so that instructors can generate these three datasets with their own parameters. However, you must have ```pyROOT``` installed to be able to run the notebook.
 
 
 ## What courses might these modules accompany?
