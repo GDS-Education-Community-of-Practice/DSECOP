@@ -56,7 +56,7 @@ Several datasets are provided to accopany these modules.
 
 For the in-class modules, we provide two CSV ```.txt``` files (```geiger_counts_A.txt``` and ```geiger_counts_B.txt```) containing a small sample (~1000) of Poisson distributed values, meant to represent the number of clicks heard per minute from a Geiger counter placed near the sample.
 
-For the quiz questions, we provide
+For the quiz questions, we provide a file ```quiz_dataset.txt`` of
 
 For the homework, we provide a file ```ee_collisions.txt``` containing a sample (xx) of simulated $ee \rightarrow abcd$ collisions. The dataset contains four-momenta and charge information for each daughter particle.
 
