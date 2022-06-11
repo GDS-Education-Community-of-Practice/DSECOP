@@ -71,6 +71,6 @@ These modules might be shown in the first two weeks of an undergraduate laborato
 - [ ] Image for ReadMe Pipeline
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
 - [ ] Module 3: Confidence Intervals
-- [ ] Module 3: Built-in ```numpy```, ```scipy``` functions for goodness-of-fit
+- [ ] Module 3: KS test actually can't be used for a discrete Poisson distribution...can the module still work for teaching purposes??
 - [ ] Module 4: (From scratch) deep learning Higgs detection
 
