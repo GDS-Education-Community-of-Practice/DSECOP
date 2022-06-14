@@ -110,7 +110,7 @@ ENV/
 env.bak/
 venv.bak/
 .gitignore
-
+.DS_Store
 # Spyder project settings
 .spyderproject
 .spyproject
