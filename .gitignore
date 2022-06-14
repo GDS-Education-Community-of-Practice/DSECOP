@@ -104,12 +104,12 @@ celerybeat.pid
 # Environments
 .env
 .venv
-.DS_Store
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+.gitignore
 
 # Spyder project settings
 .spyderproject
