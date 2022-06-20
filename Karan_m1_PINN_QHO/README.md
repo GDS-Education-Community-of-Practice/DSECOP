@@ -1,7 +1,7 @@
 # Module 1: Learning the Schrödinger Equation
 Karan Shah
 
--  **A summary**: This module can be used can be used for a Quantum Mechanics course. The module will begin with introduction to the time dependent Schrödinger Equation including a tutorial on analytical solutions the  Quantum Harmonic Oscillator etc. The second portion of this module will consist of a solution of this system using neural networks. Students are encouraged to try different parameters and modify the code to fit other systems.
+-  **A summary**: This module can be used can be used for a Quantum Mechanics course. The module will begin with introduction to the time dependent Schrödinger Equation including a tutorial on analytical solutions for the  Quantum Harmonic Oscillator. The second portion of this module will consist of a solution of this system using neural networks. Students are encouraged to try different parameters and modify the code to fit other systems.
 
 The module consists of following submodules:
 - 00: A gentle interactive introduction to deep learning with a simple toy problem. Students will learn how to create neural network pipelines and develop qualitative understanding.
@@ -19,7 +19,7 @@ The module consists of following submodules:
 -   **Physics and the data science learning goal(s):**
 	-   Physics: The Schrödinger Equation (SE) is an important part of any Quantum Mechanics course and students are expected to solve it for increasingly complex systems throughout the course. In this module, I introduce Physics-Informed Neural Networks (PINNs) and demonstrate the effectiveness of numerical techniques and deep learning for solving the SE for Quantum Harmonic Oscillators. A good time to present this module would be after students solve the Time Independent Schrodinger Equation for QHOs and are being introduced to time dependent systems.
 
-- Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
+	- Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
 
 ![PINN architecture](Lessons/fig/PINN_diagrams.png)
 
