@@ -9,6 +9,7 @@ The module consists of following submodules:
 - 02: An interactive notebook on solving 1D Quantum Harmonic Oscillator, consisting of two states in superposition evolving in time.
 
 ![Time evolution for a 3D Quantum Harmonic Oscillator](fig/3d_qho.png)
+![Time evolution for a 1D Quantum Harmonic Oscillator](plots/waveform/animation.gif)
 	
 -   **What is included in this module?**: The following topics are expected:
     -   Lecture materials and hands-on lessons
