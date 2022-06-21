@@ -318,3 +318,96 @@ def get_density(y_pred):
     
     return u,v,dens
 
+
+debug = False
+def get_waveforms(analytical_solution_function):
+    
+    L = float(np.pi)
+    omega = 1
+    delta_T = 0.1
+    delta_X = 0.1
+    x_dom = [-L,L]
+    t_dom = [0, 2*L]
+    #analytical_solution_function = get_analytical_solution_base
+
+    x = np.arange(x_dom[0], x_dom[1], delta_X).astype(float)
+    t = np.arange(t_dom[0], t_dom[1], delta_T).astype(float)
+    X, T = np.meshgrid(x, t)
+    
+    
+#     X = np.expand_dims(X.flatten(), axis=-1)
+#     T = np.expand_dims(T.flatten(), axis=-1)
+
+    psi_val = analytical_solution_function(X,T,omega)
+    u = np.real(psi_val)
+    v = np.imag(psi_val)
+    
+    dens = u**2 + v**2
+    max_d = np.max(dens)+0.02
+    
+    
+    
+    for t_step in range(len(t)):
+        curr_u = u[t_step,:]
+        curr_v = v[t_step,:]
+        curr_d = dens[t_step,:]
+        
+        fig, ax = plt.subplots()
+        plt.ylim(0.0,max_d)
+        ax.plot(x, curr_d)
+        
+        ax.set(xlabel='x (au)', ylabel=r'Probability Density $|\psi(x)|^2$',
+               title=fr'$|\psi(x)|^2$ at t={t[t_step]:.2f} au')
+        ax.grid()
+
+        fig.savefig(f"plots/waveform/t_{t_step}.png")
+        plt.show()
+
+#     train_input = np.hstack((X,T))
+#     train_output = np.hstack((u,v))
+
+#     train_x = torch.tensor(train_input)
+#     train_y = torch.tensor(train_output)
+    return None
+
+def live_waveform():
+    L = float(np.pi)
+    omega = 1
+    delta_T = 0.1
+    delta_X = 0.2
+    x_dom = [-L,L]
+    t_dom = [0, 2*L]
+    analytical_solution_function = get_analytical_solution_base
+
+    x = np.arange(x_dom[0], x_dom[1], delta_X).astype(float)
+    t = np.arange(t_dom[0], t_dom[1], delta_T).astype(float)
+    X, T = np.meshgrid(x, t)
+
+
+    #     X = np.expand_dims(X.flatten(), axis=-1)
+    #     T = np.expand_dims(T.flatten(), axis=-1)
+
+    psi_val = analytical_solution_function(X,T,omega)
+    u = np.real(psi_val)
+    v = np.imag(psi_val)
+
+    dens = u**2 + v**2
+    max_d = np.max(dens)+0.02
+
+
+    @interact(t_step=widgets.IntSlider(min=0, max=62, step=1, value=0,continuous_update=True))
+    def interactive_viz_colour(t_step):
+
+        curr_d = dens[t_step,:]
+        fig, ax = plt.subplots()
+        plt.ylim(0.0,max_d)
+        ax.plot(x, curr_d)
+
+        ax.set(xlabel='x (au)', ylabel=r'Probability Density $|\psi(x)|^2$',
+               title=fr'$|\psi(x)|^2$ at t={t[t_step]:.2f} au')
+        ax.grid()
+
+        #fig.savefig(f"plots/waveform/t_{t_step}.png")
+        plt.show()
+
+
