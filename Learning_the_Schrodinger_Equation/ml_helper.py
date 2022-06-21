@@ -12,7 +12,8 @@ from torchvision import transforms, utils
 
 from ipywidgets import interact
 
-
+#gif from plots using imagemagick
+#convert -fuzz 1% -delay 1x8 *.png  -coalesce -layers OptimizeTransparency animation.gif
 
 def viz_colour_rgb(c):
     labels = ['r','g','b','','col']
