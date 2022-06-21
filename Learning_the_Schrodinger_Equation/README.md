@@ -8,7 +8,7 @@ The module consists of following submodules:
 - 01: A broad introduction to different concepts in machine learning, with a focus on applications in physics. Numerous references are included for students to explore further.
 - 02: An interactive notebook on solving 1D Quantum Harmonic Oscillator, consisting of two states in superposition evolving in time.
 
-![Time evolution for a 3D Quantum Harmonic Oscillator](Lessons/fig/3d_qho.png)
+![Time evolution for a 3D Quantum Harmonic Oscillator](fig/3d_qho.png)
 	
 -   **What is included in this module?**: The following topics are expected:
     -   Lecture materials and hands-on lessons
@@ -21,7 +21,7 @@ The module consists of following submodules:
 
 	- Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
 
-![PINN architecture](Lessons/fig/PINN_diagrams.png)
+![PINN architecture](fig/PINN_diagrams.png)
 
 -   **Estimated amount of time these might take a student to complete**: 6 hours
 -   **Estimated amount of time these might take a professor to teach**: 2 hours
