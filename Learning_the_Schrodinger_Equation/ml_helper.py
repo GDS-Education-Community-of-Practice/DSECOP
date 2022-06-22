@@ -319,8 +319,6 @@ def get_density(y_pred):
     
     return u,v,dens
 
-
-debug = False
 def get_waveforms(analytical_solution_function):
     
     L = float(np.pi)
@@ -361,7 +359,7 @@ def get_waveforms(analytical_solution_function):
                title=fr'$|\psi(x)|^2$ at t={t[t_step]:.2f} au')
         ax.grid()
 
-        fig.savefig(f"plots/waveform/t_{t_step}.png")
+        fig.savefig(f"plots/waveform/t_{str(t_step).zfill(2)}.png")
         plt.show()
 
 #     train_input = np.hstack((X,T))
