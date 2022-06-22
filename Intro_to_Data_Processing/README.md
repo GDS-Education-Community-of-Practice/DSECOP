@@ -56,7 +56,7 @@ Several datasets are provided to accopany these modules. We also provide ```iPyt
 
 The notebook ```data_generation.ipynb``` creates:
 - (for the in-class modules) two files (```geiger_counts_A.txt``` and ```geiger_counts_B.txt```) containing a few thousand Poisson distributed values, meant to represent the number of clicks heard per minute from a Geiger counter placed near the sample.
-- (for the quiz questions) one file ```quiz_dataset.txt`` contains of a generic signal (gaussian, 3000 events) + background (exponential, 5000 events) dataset.
+- (for the quiz questions) one file ```quiz_dataset.txt``` contains of a generic signal (gaussian, 3000 events) + background (exponential, 5000 events) dataset.
 
 The notebook ```homework_dataset_generation.ipynb``` creates:
 - (for the homework) one file ```ee_collisions.txt``` containing a sample of 10,000 simulated $ee \rightarrow abcd$ collisions. The dataset contains four-momenta and charge information for each daughter particle. 
