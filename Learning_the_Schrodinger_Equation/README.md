@@ -28,7 +28,7 @@ The module consists of following submodules:
 -   **Estimated amount of time these might take a professor to teach**: 2 hours
 -   **Pre-requisites:** 
     - [Core prerequisites](https://github.com/GDS-Education-Community-of-Practice/DSECOP/wiki/Core-prerequisites)
-    - Intro to Deep Learning Module by Fatemeh Bagheri
+    - [Intro to Deep Learning Module by Fatemeh Bagheri](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Deep_Learning)
 
 ***Instructions for setting up the environment***
 To set up the environment with conda:
