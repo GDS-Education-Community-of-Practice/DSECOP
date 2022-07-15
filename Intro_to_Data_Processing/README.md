@@ -2,6 +2,12 @@
 
 A key component of scientific research is the *analysis pipeline*, the analytical and computational steps that convert a dataset of raw measurements into meaningful results. The process of extracting relevant features from long tables of numbers is a sort of art form, as there is ambiguity at every step: how should one determine what parameters of a given model best fit the data? Or how can one establish confidence that their preferred model is in fact the one that best describes the data?
 
+
+
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/uc?export=view&id=13I4wekAVCOYpGFE2uJRR0B9gOIDr2JBE">
+
+
 In this module, students will be introduced to common steps in an analysis pipeline. They will gain practice in processing datasets into more compact histograms and curve fitting the distributions to possible underlying models. Students will also learn how to quantify how well a hypothesized matches the true model that produced the dataset. 
 
 ## Learning goals
@@ -70,7 +76,7 @@ These modules might be shown in the first two weeks of an undergraduate laborato
 ### TODO
 - [ ] Image for ReadMe Pipeline
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
-- [ ] Module 3: Confidence Intervals
+- [ ] Module 3: Confidence Intervals + residual pull plots
 - [x] Module 3: KS test actually can't be used for a discrete Poisson distribution...can the module still work for teaching purposes??
 - [ ] Module 4: (From scratch) deep learning Higgs detection
 
