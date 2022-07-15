@@ -4,7 +4,7 @@ A key component of scientific research is the *analysis pipeline*, the analytica
 
 
 
-![fff](readme_img.png)
+![](readme_img.png)
 
 
 
@@ -74,9 +74,7 @@ The notebook ```homework_dataset_generation.ipynb``` creates:
 These modules might be shown in the first two weeks of an undergraduate laboratory course. Additionally, the homework could be given as a standalone assignment for an undergraduate Particle Physics course.
 
 ### TODO
-- [ ] Image for ReadMe Pipeline
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
 - [ ] Module 3: Confidence Intervals + residual pull plots
-- [x] Module 3: KS test actually can't be used for a discrete Poisson distribution...can the module still work for teaching purposes??
 - [ ] Module 4: (From scratch) deep learning Higgs detection
 
