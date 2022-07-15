@@ -4,8 +4,8 @@ A key component of scientific research is the *analysis pipeline*, the analytica
 
 
 
-<img align="left" width="400" height="350" 
-src="https://drive.google.com/uc?export=view&id=13I4wekAVCOYpGFE2uJRR0B9gOIDr2JBE">
+![fff](readme_img.png)
+
 
 
 In this module, students will be introduced to common steps in an analysis pipeline. They will gain practice in processing datasets into more compact histograms and curve fitting the distributions to possible underlying models. Students will also learn how to quantify how well a hypothesized matches the true model that produced the dataset. 
