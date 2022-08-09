@@ -73,8 +73,13 @@ The notebook ```homework_dataset_generation.ipynb``` creates:
 
 These modules might be shown in the first two weeks of an undergraduate laboratory course. Additionally, the homework could be given as a standalone assignment for an undergraduate Particle Physics course.
 
+---
+
+### IN PROGRESS
+- [ ] Module 4: Residuals and pull plots
+- [ ] Module 3: adding in Confidence Intervals
+
 ### TODO
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
-- [ ] Module 3: Confidence Intervals + residual pull plots
-- [ ] Module 4: (From scratch) deep learning Higgs detection
+- [ ] Module 5: (From scratch) deep learning Higgs detection
 
