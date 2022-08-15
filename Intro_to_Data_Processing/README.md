@@ -76,8 +76,8 @@ These modules might be shown in the first two weeks of an undergraduate laborato
 ---
 
 ### IN PROGRESS
-- [ ] Module 4: Residuals and pull plots
-- [ ] Module 3: adding in Confidence Intervals
+- [x] Module 4: Residuals and pull plots
+- [x] Module 3: adding in Confidence Intervals
 
 ### TODO
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
