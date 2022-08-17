@@ -82,4 +82,5 @@ These modules might be shown in the first two weeks of an undergraduate laborato
 ### TODO
 - [ ] Module 1: Other data visualizations (i.e. scatter plots, time series)
 - [ ] Module 5: (From scratch) deep learning Higgs detection
+- [ ] Module 2: Mention non-grid search methods of optimization
 
