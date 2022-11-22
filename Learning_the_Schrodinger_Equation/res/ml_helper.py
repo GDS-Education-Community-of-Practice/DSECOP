@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 import torch
 import torch.nn as nn
@@ -10,12 +11,6 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, utils
 
 from ipywidgets import interact
-
-import matplotlib.pyplot as plt
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-import matplotlib as mpl
-from matplotlib.lines import Line2D
-import matplotlib.image as img
 
 #gif from plots using imagemagick
 #convert -fuzz 1% -delay 1x8 *.png  -coalesce -layers OptimizeTransparency animation.gif
@@ -206,8 +201,8 @@ debug = False
 def get_plots_norm_colorbar(y_true,y_pred, n_x, n_t, x_dom, t_dom, plot_fname):
     labels = ["Predicted", "True", "Abs Err"]
     
-    u,v,dens = get_density(y_true.detach().numpy())
-    u_pred, v_pred, dens_pred = get_density(y_pred.detach().numpy())
+    u,v,dens = get_density(y_true.detach().cpu().numpy())
+    u_pred, v_pred, dens_pred = get_density(y_pred.detach().cpu().numpy())
     
     
 
@@ -311,7 +306,7 @@ def get_plots_norm_colorbar(y_true,y_pred, n_x, n_t, x_dom, t_dom, plot_fname):
             
     plot_title = plot_name
     plt.suptitle(fr"{plot_title}",y=0.92)
-    plt.savefig(f'res/plots/{plot_fname}')
+    plt.savefig(f'plots/{plot_fname}')
     plt.show()
     print(f"mse: u: {mse_u}, v:{mse_v}")
     return mse_u,mse_v
