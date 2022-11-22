@@ -8,9 +8,9 @@ The module consists of following submodules:
 - 01: A broad introduction to different concepts in machine learning, with a focus on applications in physics. Numerous references are included for students to explore further.
 - 02: An interactive notebook on solving 1D Quantum Harmonic Oscillator, consisting of two states in superposition evolving in time.
 
-![Time evolution for a 3D Quantum Harmonic Oscillator](fig/3d_qho.png)
-![Time evolution for a 1D Quantum Harmonic Oscillator](plots/waveform/psi_0_1/animation.gif)
-![Time evolution for a 1D Quantum Harmonic Oscillator](plots/waveform/psi_1_3/animation.gif)
+![Time evolution for a 3D Quantum Harmonic Oscillator](res/fig/3d_qho.png)
+![Time evolution for a 1D Quantum Harmonic Oscillator](res/plots/waveform/psi_0_1/animation.gif)
+![Time evolution for a 1D Quantum Harmonic Oscillator](res/plots/waveform/psi_1_3/animation.gif)
 	
 -   **What is included in this module?**: The following topics are expected:
     -   Lecture materials and hands-on lessons
@@ -23,7 +23,7 @@ The module consists of following submodules:
 
 	- Data Science: PINNs [1,2] are a novel class of machine learning algorithms for solution of partial differential equations. This is achieved by incorporating structured prior information derived from physical laws into the learning algorithm. PINNs are constructed by encoding the constraints posed by a given differential equation and its boundary conditions into the loss function of a NN. This constraint guides the network to approximate the solution of the differential equation.
 
-![PINN architecture](fig/PINN_diagrams.png)
+![PINN architecture](res/fig/PINN_diagrams.png)
 
 -   **Estimated amount of time these might take a student to complete**: 6 hours
 -   **Estimated amount of time these might take a professor to teach**: 2 hours
@@ -43,7 +43,7 @@ Activate the env:
 Install required libraries:
 ```
 conda install numpy matplotlib jupyter ipywidgets
-conda install pytorch torchvision cpuonly -c pytorch
+conda install pytorch torchvision -c pytorch
 ```
 
 Run `jupyter notebook` in this directory. A browser window will open where the notebooks can be viewed.
