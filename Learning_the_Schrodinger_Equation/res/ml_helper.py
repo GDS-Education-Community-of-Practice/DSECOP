@@ -37,7 +37,8 @@ def viz_colour_rgb(c):
     ax = fig.add_axes([0,0, 1, 1])  # span the whole figure
     #ax.set_axis_off()
     
-    ax.set_xticks(np.arange(len(labels)), labels=labels)
+    ax.set_xticks(np.arange(len(labels)))
+    ax.set_xticklabels(labels)
 #    ax.set_yticks(np.arange(len(vegetables)), labels=vegetables)
 
     # Rotate the tick labels and set their alignment.
@@ -158,7 +159,8 @@ def viz_colour_cmyk(c):
     ax = fig.add_axes([0,0, 1, 1])  # span the whole figure
     #ax.set_axis_off()
     
-    ax.set_xticks(np.arange(len(labels)), labels=labels)
+    ax.set_xticks(np.arange(len(labels)))
+    ax.set_xticklabels(labels)
 #    ax.set_yticks(np.arange(len(vegetables)), labels=vegetables)
 
     # Rotate the tick labels and set their alignment.
