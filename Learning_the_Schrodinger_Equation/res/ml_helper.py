@@ -312,7 +312,7 @@ def get_plots_norm_colorbar(y_true,y_pred, n_x, n_t, x_dom, t_dom, plot_fname):
             
     plot_title = plot_name
     plt.suptitle(fr"{plot_title}",y=0.92)
-    plt.savefig(f'plots/{plot_fname}')
+    plt.savefig(f'res/plots/{plot_fname}')
     plt.show()
     print(f"mse: u: {mse_u}, v:{mse_v}")
     return mse_u,mse_v
@@ -365,7 +365,7 @@ def get_waveforms(analytical_solution_function):
                title=fr'$|\psi(x)|^2$ at t={t[t_step]:.2f} au')
         ax.grid()
 
-        fig.savefig(f"plots/waveform/t_{str(t_step).zfill(2)}.png")
+        fig.savefig(f"res/plots/waveform/t_{str(t_step).zfill(2)}.png")
         plt.show()
 
 #     train_input = np.hstack((X,T))
@@ -412,7 +412,7 @@ def live_waveform():
                title=fr'$|\psi(x)|^2$ at t={t[t_step]:.2f} au')
         ax.grid()
 
-        #fig.savefig(f"plots/waveform/t_{t_step}.png")
+        #fig.savefig(f"res/plots/waveform/t_{t_step}.png")
         plt.show()
 
 
