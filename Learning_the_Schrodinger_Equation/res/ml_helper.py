@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import torch
 import torch.nn as nn
@@ -12,6 +12,12 @@ from torchvision import transforms, utils
 
 from ipywidgets import interact
 
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+import matplotlib as mpl
+from matplotlib.lines import Line2D
+import matplotlib.image as img
+import copy
 #gif from plots using imagemagick
 #convert -fuzz 1% -delay 1x8 *.png  -coalesce -layers OptimizeTransparency animation.gif
 
