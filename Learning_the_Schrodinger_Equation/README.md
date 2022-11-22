@@ -31,7 +31,14 @@ The module consists of following submodules:
     - [Core prerequisites](https://github.com/GDS-Education-Community-of-Practice/DSECOP/wiki/Core-prerequisites)
     - [Intro to Deep Learning Module by Fatemeh Bagheri](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Deep_Learning)
 
-***Instructions for setting up the environment***
+***Instructions for setting up the COLAB environment***
+
+Click on "Open in Colab" button on any notebook. This will run the notebook on Google Colab.
+
+Please use GPU for faster performance. You can check this by going in the "Runtime" menu in Colab, clicking on "Change Runtime Type" and setting "Hardware Accelerator" as "GPU".
+
+***Instructions for setting up the LOCAL environment***
+
 To set up the environment with conda:
 
 Create new env:
