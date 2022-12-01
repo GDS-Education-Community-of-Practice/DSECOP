@@ -1,22 +1,26 @@
 # Introduction to the Machine Learning Workflow with Linear Regression
 
 ## Table of Contents
+* Notebook 1: 
+* Notebook 2:
 
 ## Summary of Module
 
 ## Prerequisites
 
 ### Python Prerequisites
+The only Python prerequsite is a basic knowledge of the Python programming language and the libraries NumPy and Matplotlib.  Many of the coding questions are simiplified to account for students who have a lower level of programming knowledge to be mainly fill in the blank questions or making small changes to prior code.  Only some of the optional bonus questions will ask students to ask code without guidance and a template.
+
+Please note that these notebooks are designed to run on Google Colab, a cloud-based implementation of Jupyter Notebooks.  This means that all of the notebooks and data files should be saved to a Google Drive account.  The notebooks can be run locally with some edits.
 
 ### Physics Prerequisites
+It is assumed that students will have a basic knowledge of Newton's second law, kinematic equations, and Newtonian gravitation.
 
 ## Learning Goals
 
 ### Physics Learning Goals
-* Notebook 1: No physics learning goals
-* Notebook 2:
-    * Reinforce previous lessons on Newtonian Gravitation and Newton's second law
-    * Understand net force equations and how they related to Newton's second law
+ * Reinforce previous lessons on Newtonian Gravitation and Newton's second law
+ * Understand net force equations and how they related to Newton's second law, setting up net force equations for a two-body system
 
 ### Data Science Learning Goals
 * Understand the steps of the machine learning workflow and how to apply them to different data sets
@@ -24,7 +28,7 @@
 * Be able to frame a set of equations as a linear regression problem with a design matrix and appply physical meaning to the linear regression weights
 
 ## Suggested Course to Plug Into
-As a note, all of these notebooks can be plugged into a computational physics course.
-* Notebook 2: Introductory Mechanics or Classical Mechanics
+The physics content in these notebooks aligns well with the material taught in an introductory mechanics or classical mechanics course.  The material could also be used in a computational physics course.
 
 ## Time Needed to Complete the Module
+The total class/lab time needed to complete this modeule is estimated as _1-2 houra_ and the time for students to complete out of class assignments is estimated as _2-4 hours_. When creating the module it was envisioned that Notebook 1 would be given to students as a homework assignment and Notebook 2 would be completed in class or in lab.  Completing Notebook 1 as a homework assignment should take approximately _2 hours_, but it may be longer for students who are not as familar with Python.  This time estimate also does not include completing the optional bonus question. Completing the main part of Notebook 2 as a class or lab assignment should take approximately _1 to 2 hours_ with the "Practice What You Learned" question taking an additional _1 hour_, could it could also be assigned as a homework assignement for a shorter class.  
