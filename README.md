@@ -10,3 +10,4 @@ This repository contains data science educational materials for physics courses 
 * [Exploratory Data Analysis](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Exploratory_Data_Analysis) by Radha Mastandrea
 * [Intro to Random Forest](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Random_Forest) by Fatima Bagheri
 * [Singular Value Decomposition](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Singular_Value_Decomposition) by Sebastian Atalla
+* [Machine Learning Workflow](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Machine_Learning_Workflow) by Julie Butler
