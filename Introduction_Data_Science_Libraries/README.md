@@ -13,6 +13,7 @@ Pandas, Matplotlib, Seaborn, Graphing, Introductory
 ## Table of Contents
 
 **Notebook 1**: An introduction to the Python data science libraries Pandas, Seaborn, and Matplotlib.  Students analyze a data set taken from nuclear physics to explore these libraries
+
 **nuclear_data.tsv**: The data set needed by Notebook 1.
 
 ## Pre-requisities
