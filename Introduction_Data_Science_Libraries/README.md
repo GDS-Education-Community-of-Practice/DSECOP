@@ -38,6 +38,7 @@ Though the data set in this module is taken from nuclear physics, in-depth knowl
 ### Data Science
 
 The data science objectives from this module are as follows:
+* Be able to read documentation for functions from the various data science libraries
 * Be able to use Pandas to import a data file, format it as a Pandas Dataframe, and begin exploring and analyzing the data
 * Be able to use Matplotlib and Seaborn to further your analysis of the data set
 * Be able to use Matplotlib and Seaborn to make physically relevant plots of the data set both in two dimensions and in three dimensions
