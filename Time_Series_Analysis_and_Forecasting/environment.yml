@@ -1,0 +1,15 @@
+name: timeseries
+dependencies:
+  - python=3.9
+  - ca-certificates
+  - certifi
+  - openssl
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - keras
+  - jupyter
+  - jupyterlab
+  - ipympl
+  - statsmodels
