@@ -5,9 +5,11 @@ Connor Robertson
 This module is meant to teach basic time series analysis and forecasting along with the use of recurrent neural networks for time series forecasting. 
 Though the material is generally applicable to a wide range of fields and career paths, it is presented in the context of projectile motion with drag. 
 As such it is well suited to a course on classical mechanics. The module is split into three standalone submodules:
-    - **Notebook 1** (2 hr): Simulating projectile motion with drag
-    - **Notebook 2** (2 hr): Analyzing noise polluted data on the projectile motion using standard time series techniques
-    - **Notebook 3** (1 hr): Forecasting future states of the projectile using recurrent neural networks
+
+- **Notebook 1** (2 hr): Simulating projectile motion with drag
+- **Notebook 2** (2 hr): Analyzing noise polluted data on the projectile motion using standard time series techniques
+- **Notebook 3** (1 hr): Forecasting future states of the projectile using recurrent neural networks
+    
 Though the submodules build on each other and are interrelated, they can be done individually or in any pair.
 Each submodule contains 3-4 programming questions that allow the students to modify example code to better understand how the program in these contexts and to explore the effects of different models and parameters.
  
@@ -37,16 +39,15 @@ As a resource for this, the [Intro to Deep Learning](https://github.com/GDS-Educ
 ## Setup Instructions
 	
 ***Instructions for setting up the COLAB environment***
+
 Click on "Open in Colab" button on any notebook in this repository.
 This will run the notebook on Google Colab.
 
 ***Instructions for setting up the LOCAL environment***
 To set up the environment with conda:
 
-Create new environment using the `environment.yml` file in this repository:
+1. Create new environment using the `environment.yml` file in this repository:
 `conda env create -f environment.yml`
-
-Activate the env:
+2. Activate the env:
 `conda activate timeseries`
-
-Run `jupyter notebook` in this directory. A browser window will open where the notebooks can be viewed.
+3. Run `jupyter notebook` in this directory. A browser window will open where the notebooks can be viewed.
