@@ -1,3 +1,10 @@
+# yolo weights
+Computer_Vision_Lab/yolo/*.weights
+
+#video outputs
+Computer_Vision_Lab/experiments/*/02_tracking_data
+Computer_Vision_Lab/experiments/*/03_tracking_data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
