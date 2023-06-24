@@ -1,5 +1,7 @@
 # Module Summary
 
+![Ising lattice and net magnetization curve from notebook 02](README_img.png)
+
 This module will connect classical Monte Carlo (MC) simulations to modern machine learning methods. Students will learn to implement Metropolis-Hastings Algorithm Ising Model simulations to generate their own 2D magnetic domain image set, then use supervised and unsupervised machine learning techniques to perform additional analysis.  Three notebooks are presented: The first is an introduction to Monte Carlo methods and Markov chains; students learn the difference between a model and a simulation, then implement basic MC integration of a differential physics equation to approximate the area under a curve.  The second notebook introduces the 2D Ising Model and the Metropolis-Hastings algorithm by teaching students how to implement the algorithm on the CPU with NumPy libraries, and GPU with TensorFlow; students will learn basic algorithm optimization techniques and generate a labeled image set of Ising lattices suitable for further analysis.  The third notebook introduces supervised machine learning techniques; students will reverse the task from the second notebook and instead of simulating Ising lattices at a given temperature, predict a temperature for a given Ising lattice.
 
 ### Key Words
