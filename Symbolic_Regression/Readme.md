@@ -1,4 +1,5 @@
 Author: Joseph Dominicus Lap
+
 E-mail: joseph.dominicus.lap@yale.edu
 # Introduction to Symbolic Regression
 The aim of this module is to introduce students to symbolic regression, multi-step algorithms, and how concepts from physics can be useful in a datscience context. It does this by introducing them to the 2020 [AIFeynman algorithm](https://www.science.org/doi/10.1126/sciadv.aay2631). Symbolic regression is not just a method of fitting data to a model, but rather a method of model discovery. It aims to find the mathematical expression that best fits the form of the data. The AIFeynman algorithm accomplishes this efficiently by using tricks from physics such as dimensional analysis, additive/multiplicative seperability, and translational symmetry. Due to the modularity of the algorithm, the notebook is correspondingly modular and educators should feel free to use only the portions relevant to their course.
