@@ -10,14 +10,14 @@ The objective is to get a sense of the various techniques physicists use to simp
 • Symmetry (an intuitive grasp without delving into group theory)
 • Separability
 
-After this module one should be able understand all the steps in a multi-step algorithm, understand how noisy data effects algorithms, and *optionally* be able to understand and apply small neural networks
+After this module one should be able understand all the steps in a multi-step algorithm, understand how noisy data affects algorithms, and *optionally* be able to understand and apply small neural networks
 
 ## Prerequisites
 A basic understanding of ```numpy```, ```matplotlib```, and ```pandas``` will be necessary to understand the functioning of the notebook. In addition linear algebra will be necessary to understand the dimensional analysis algorithm.
 *Optional*: In order to delve into the functioning of the neural network one should have experience with ```PyTorch``` and Neural Networks, which can be gained from the [Intro to Deep Learning module](../Intro_to_Deep_Learning/).
 
 ## What's included in this module?
-The main notebook is ```01_Symbolic_regression.ipynb```. It will walk students through the different parts that make up the AI Feynman algorithm and has several conceptual exercises so they can confirm their understanding. In addition there's ```02_NeuralNet.ipynb``` which allows students to look under the hood of the neural network used in the symbolic regression notebook. More advanced courses can tweak the network (change loss functions, tune hyperparameters, make it deeper, etc.) and see how this effects the algorithm's functioning.
+The main notebook is ```01_Symbolic_regression.ipynb```. It will walk students through the different parts that make up the AI Feynman algorithm and has several conceptual exercises so they can confirm their understanding. In addition there's ```02_NeuralNet.ipynb``` which allows students to look under the hood of the neural network used in the symbolic regression notebook. More advanced courses can tweak the network (change loss functions, tune hyperparameters, make it deeper, etc.) and see how this affects the algorithm's functioning.
 
 ## What courses might this module accompany?
 This model would fit nicely into a lab course. The pared down version can be used for more introductory labs and more senior versions can make use of the additional neural network material. Data from the lab can be run through the algorithm, but “sample data” will be provided that is generated from a known equation so that the pedagogy doesn’t depend on amount of data or precision of data (it is estimated that the algorithm is 50% less effective with even 1% error).
