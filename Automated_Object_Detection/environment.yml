@@ -1,0 +1,11 @@
+name: dsecopcv
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib
+  - scipy
+  - numpy
+  - opencv
+  - jupyter
+  - ipywidgets
+
