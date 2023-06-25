@@ -7,13 +7,14 @@ Though the material is generally applicable to a wide range of fields and career
 As such it is well suited to a course on classical mechanics. The module is split into three standalone submodules:
 
 - **Notebook 1** (2 hr): Simulating projectile motion without and with drag 
-![Notebook 1](images/projectile_motion.gif)
-
 - **Notebook 2** (2 hr): Analyzing and forecasting noise polluted trajectory data from notebook 1 using standard time series techniques
-![Notebook 2](images/timeseries_metrics.png)
-
 - **Notebook 3** (1 hr): Forecasting projectile motion using recurrent neural networks trained on trajectory data from notebook 1
-![Notebook 3](images/timeseries_forecast.png)
+
+<!-- ![Notebook 1](images/projectile_motion.gif) ![Notebook 2](images/timeseries_metrics.png) ![Notebook 3](images/timeseries_forecast.png) -->
+<p float="center">
+  <img src="images/projectile_motion.gif" width="49%" />
+  <img src="images/timeseries_forecast.png" width="49%" />
+</p>
     
 Though the submodules build on each other and are interrelated, they can be done individually or in any pair.
 Each submodule contains 3-4 programming questions that allow the students to modify example code to better understand how the program in these contexts and to explore the effects of different models and parameters.
