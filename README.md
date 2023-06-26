@@ -7,7 +7,7 @@ This repository contains data science educational materials for physics courses 
 * [Connecting MonteCarlo to Modern AI](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Connecting_MonteCarlo_to_ModernAI) by Ashley Dale (2023)
 * [Time Series Analysis and Forecasting](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Time_Series_Analysis_and_Forecasting) by Connor Robertson (2023)
 * [Intro to Classification Algorithms](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Classification_Algorithms) by Richard Harry (2023)
-* [Automated Object Detection]() by Karan Shah (2023)
+* [Automated Object Detection](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Automated_Object_Detection) by Karan Shah (2023)
 * [Intro to Data Processing with Histograms](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Data_Processing_with_Histograms) by Radha Mastandrea (2022)
 * [Intro to Deep Learning](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Deep_Learning) by Fatima Bagheri (2022)
 * [Learning the Schrodinger Equation](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Learning_the_Schrodinger_Equation) by Karan Shah (2022)
