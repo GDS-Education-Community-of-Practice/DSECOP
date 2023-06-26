@@ -1,4 +1,4 @@
-# Time Series Analysis and Forecasting Applied to Projectile Motion with Drag
+# DSECOP 290: Time Series Analysis and Forecasting Applied to Projectile Motion with Drag
 Connor Robertson
 
 ## Summary
