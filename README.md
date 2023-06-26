@@ -2,7 +2,7 @@ This repository contains data science educational materials for physics courses 
 
 ## Table of Contents
 
-* [Introduction Data Science Libraries](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Data_Science_Libraries) by Julie Butler (2023)
+* [Introduction to Data Science Libraries](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Data_Science_Libraries) by Julie Butler (2023)
 * [Symbolic Regression](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Symbolic_Regression) by Joseph Dominicus Lap (2023)
 * [Connecting MonteCarlo to Modern AI](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Connecting_MonteCarlo_to_ModernAI) by Ashley Dale (2023)
 * [Time Series Analysis and Forecasting](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Time_Series_Analysis_and_Forecasting) by Connor Robertson (2023)
