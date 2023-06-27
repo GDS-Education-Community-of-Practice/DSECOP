@@ -14,6 +14,7 @@ These notebooks are recommended for undergraduate courses in thermodynamics, sol
 ### Background Knowledge
 
 Students should be familiar with basic probability and have beginning knowledge of a scripting language (e.g., Python, MATLAB, R, etc.).
+Students should understsand what a Hamiltonian is for Notebook 2.
 
 ### Estimated Amount of Time
 
