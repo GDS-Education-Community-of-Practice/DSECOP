@@ -18,3 +18,9 @@ This repository contains data science educational materials for physics courses 
 * [Intro to Random Forest](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Random_Forest) by Fatima Bagheri (2022)
 * [Singular Value Decomposition](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Singular_Value_Decomposition) by Sebastian Atalla (2022)
 * [Machine Learning Workflow](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Machine_Learning_Workflow) by Julie Butler (2022)
+
+## Reporting Issues and Feedback
+
+Please use the [Bug Reporting Form found here](https://github.com/GDS-Education-Community-of-Practice/DSECOP/issues/new/choose) to let us know about any problems with the notebooks.
+
+You can also email `dsecop@aps.org` with feedback. 
