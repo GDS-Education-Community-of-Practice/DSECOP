@@ -46,7 +46,7 @@ The data science objectives from this module are as follows:
 
 ## Suggested Course to Plug Into
 
-This module would work well in a lab course for students who are already familiar with Python and want to start using Python to analyze and display their data. This module's appropriate level (i.e., first-year, second-year students, etc.) would depend on the student's prior programming knowledge. The physics data set is drawn from nuclear physics, but an in-depth understanding of this data sets and the surrounding physics is optional.
+This module would work well in a lab course for students who are already familiar with Python and want to start using Python to analyze and display their data. This module's appropriate level (i.e., first-year, second-year students, etc.) would depend on the student's prior programming knowledge. The physics data set is drawn from nuclear physics, but an in-depth understanding of this data sets and the surrounding physics is optional.  However, this module could serve as an introduction to binding energies in a nuclear and particle physics course for undergraduates.
 
 ## Time Needed for Students to Complete the Assignments: 2 hours
 
