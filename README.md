@@ -1,4 +1,4 @@
-This repository contains data science educational materials for physics courses developed by Data Science Education Community of Practice (DSECOP) Fellows. To learn more about the DSECOP project please visit https://dsecop.org/.
+This repository contains data science educational materials for physics courses developed by Data Science Education Community of Practice (DSECOP) Fellows. To learn more about the DSECOP project, please visit https://dsecop.org/.
 
 ## Table of Contents
 
@@ -24,3 +24,9 @@ This repository contains data science educational materials for physics courses 
 Please use the [Bug Reporting Form found here](https://github.com/GDS-Education-Community-of-Practice/DSECOP/issues/new/choose) to let us know about any problems with the notebooks.
 
 You can also email `dsecop@aps.org` with feedback. 
+
+## Open Education Statement
+All content in this repository is distributed under Creative Commons CC0 License. Please submit issues or pull requests to this GitHub repo if you wish to improve the materials.
+
+## Sponsors
+<img width="400" alt="Screenshot 2023-07-17 at 1 04 41 PM" src="https://github.com/GDS-Education-Community-of-Practice/DSECOP/assets/8302673/94b2d28b-0030-4aa0-9f85-53eadfb560af">
