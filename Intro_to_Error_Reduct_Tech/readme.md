@@ -1,4 +1,4 @@
-## Introduction to Error Reduction Techniques ##
+# Introduction to Error Reduction Techniques #
 
 # Module Summary
 This two-module notebook consists of an introduction to sampling, interpreting, and optimizing machine learning models using mean absolute percent error (MAPE), mean standard error (MSE), and error-correcting output codes (ECOC).  This notebook can be seen as a continuation of DSECOP 150: Introduction to Classification Algorithms 
