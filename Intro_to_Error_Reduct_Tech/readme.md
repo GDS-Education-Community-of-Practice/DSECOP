@@ -24,7 +24,7 @@ Students will become familiar with libraries such as NumPy, Pandas, seaborn, mat
 The module does not require much experience with python or coding. However, an understanding of introductory linear algebra and calculus-based physics should be required. Thus, this module can serve as excellent supplemental material for undergraduate physics courses for students who are in the process or have already understood the interaction of light with matter.
 
 # Estimated Amount of Time #
-It is estimated that these notebooks could be completed in a standard 2-hour lab.  If necessary, the linear regression module can be broken up into two (~1.5 hours) sessions.
+It is estimated that these notebooks could be completed in a standard 2-hour lab.  If necessary, the module can be broken up into two (~1.5 hours) sessions.
 
 
 
