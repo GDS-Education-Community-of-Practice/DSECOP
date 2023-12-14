@@ -1,0 +1,9 @@
+name: autodiff
+dependencies:
+  - jupyter
+  - matplotlib
+  - numpy
+  - jax
+  - pytorch
+  - scipy
+  - python=3.11
