@@ -14,7 +14,9 @@ Electromagnetism, Visualization, Linear Regression, Neural Networks, Wave Equati
 ## Table of Contents
 
 **01_Visualization.ipynb**: Students work through a Griffith's problem and visualize the electromagnetic field lines in 3D space.
+
 **02_Linear_Regressions.ipynb** Students use a linear regression to determine the proton content of a nucleus based on data of its orbiting electron (a toy problem with no quantum mechanics).
+
 **03_Learning_DiffEqs.ipynb** Students use a simple Neural Network to find standing wave solutions to the wave equation.
 
 **electron_data.csv**: The data set needed for Notebook 2.
