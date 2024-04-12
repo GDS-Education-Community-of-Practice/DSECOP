@@ -5,7 +5,7 @@ This repository contains data science educational materials for physics courses 
 * DSECOP 102 [The Professor's Module](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/The_Professors_Module) by Julie Butler (2023)
 * DSECOP 160 [Outlier Analysis](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Outlier_Analysis) by Ashley Dale (2023)
 * DSECOP 170 [Introduction to Error Reduction Techniques](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Error_Reduct_Tech) by Richard Harry (2023)
-* DSECOP 190 [Data science questions for Griffiths psets]() by Joseph Dominicus Lap (2023)
+* DSECOP 190 [Data science questions for E&M psets](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Electromagnetism_Supplementary_Exercises) by Joseph Dominicus Lap (2023)
 * DSECOP 236 [Gaussian Processes and the Schrödinger Equation](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Gaussian_Processes_and_Schrodinger_Equation) by Karan Shah (2023)
 * DSECOP 250 [Automatic Differentiation](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Automatic_Differentiation) by Connor Robertson (2023)
 * DSECOP 101 [Introduction to Data Science Libraries](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Data_Science_Libraries) by Julie Butler (2023)
