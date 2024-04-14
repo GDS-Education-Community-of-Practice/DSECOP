@@ -1,5 +1,5 @@
-# Module 1: Learning the Schrödinger Equation
-Karan Shah
+# DSECOP 235 Learning the Schrödinger Equation
+Author: Karan Shah
 
 -  **A summary**: This module can be used can be used for a Quantum Mechanics course. The module will begin with introduction to the time dependent Schrödinger Equation including a tutorial on analytical solutions for the  Quantum Harmonic Oscillator. The second portion of this module will consist of a solution of this system using neural networks. Students are encouraged to try different parameters and modify the code to fit other systems.
 
