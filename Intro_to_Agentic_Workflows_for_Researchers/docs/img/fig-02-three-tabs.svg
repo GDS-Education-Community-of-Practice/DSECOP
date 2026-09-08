@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1600" height="900" fill="#F0EEE6"/>
+  <text x="800" y="62" text-anchor="middle" font-size="28" font-weight="700" fill="#1F1E1D">Three tabs, three different tools</text>
+
+  <!-- window -->
+  <rect x="150" y="96" width="1300" height="470" rx="14" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <path d="M150 110 a14 14 0 0 1 14 -14 h1272 a14 14 0 0 1 14 14 v52 h-1300 z" fill="#FAF8F3"/>
+  <line x1="150" y1="162" x2="1450" y2="162" stroke="#E4E0D4" stroke-width="1.5"/>
+  <circle cx="184" cy="129" r="7" fill="#E0DCD0"/>
+  <circle cx="208" cy="129" r="7" fill="#E0DCD0"/>
+  <circle cx="232" cy="129" r="7" fill="#E0DCD0"/>
+
+  <!-- tabs -->
+  <text x="660" y="137" text-anchor="middle" font-size="21" fill="#9A978E">Chat</text>
+  <text x="800" y="137" text-anchor="middle" font-size="21" fill="#9A978E">Cowork</text>
+  <text x="944" y="137" text-anchor="middle" font-size="21" font-weight="700" fill="#1F1E1D">Code</text>
+  <rect x="898" y="152" width="92" height="4" rx="2" fill="#D97757"/>
+
+  <!-- body: generic project -->
+  <rect x="150" y="162" width="230" height="404" fill="#FAF8F3"/>
+  <line x1="380" y1="162" x2="380" y2="566" stroke="#E4E0D4" stroke-width="1.5"/>
+  <rect x="176" y="190" width="178" height="30" rx="6" fill="#EFEBE0"/>
+  <text x="190" y="211" font-size="15" fill="#7C7A73">analysis</text>
+  <rect x="176" y="230" width="178" height="30" rx="6" fill="#FFFFFF" stroke="#E4E0D4"/>
+  <text x="190" y="251" font-size="15" fill="#9A978E">figures</text>
+  <rect x="176" y="270" width="178" height="30" rx="6" fill="#FFFFFF" stroke="#E4E0D4"/>
+  <text x="190" y="291" font-size="15" fill="#9A978E">manuscript</text>
+
+  <rect x="412" y="196" width="320" height="12" rx="6" fill="#E8E4D8"/>
+  <rect x="412" y="222" width="470" height="12" rx="6" fill="#E8E4D8"/>
+  <rect x="412" y="248" width="392" height="12" rx="6" fill="#E8E4D8"/>
+  <rect x="412" y="292" width="200" height="26" rx="6" fill="#F3EFE4" stroke="#E0DCD0"/>
+  <text x="424" y="310" font-size="14" fill="#8A8880">clean_data.py</text>
+  <rect x="624" y="292" width="196" height="26" rx="6" fill="#F3EFE4" stroke="#E0DCD0"/>
+  <text x="636" y="310" font-size="14" fill="#8A8880">data_2024.csv</text>
+  <rect x="412" y="342" width="512" height="12" rx="6" fill="#E8E4D8"/>
+  <rect x="412" y="368" width="330" height="12" rx="6" fill="#E8E4D8"/>
+  <rect x="412" y="470" width="1000" height="66" rx="10" fill="#FAF8F3" stroke="#E4E0D4" stroke-width="1.5"/>
+  <text x="436" y="510" font-size="17" fill="#B4B1A8">Describe what you want to do...</text>
+
+  <!-- leader lines -->
+  <path d="M660 150 L660 176 L520 176 L520 626" fill="none" stroke="#B9B5AA" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M800 150 L800 626" fill="none" stroke="#B9B5AA" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M944 168 L944 190 L1150 190 L1150 626" fill="none" stroke="#D97757" stroke-width="2.5"/>
+  <polygon points="520,638 512,624 528,624" fill="#B9B5AA"/>
+  <polygon points="800,638 792,624 808,624" fill="#B9B5AA"/>
+  <polygon points="1150,638 1141,622 1159,622" fill="#D97757"/>
+
+  <!-- callout cards -->
+  <rect x="330" y="640" width="380" height="150" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <text x="358" y="682" font-size="23" font-weight="700" fill="#1F1E1D">Chat</text>
+  <text x="358" y="716" font-size="18" fill="#5C5A54">Talk. No access to your files.</text>
+  <text x="358" y="746" font-size="17" fill="#8A8880">Explain a concept, critique an</text>
+  <text x="358" y="770" font-size="17" fill="#8A8880">abstract, brainstorm.</text>
+
+  <rect x="740" y="640" width="380" height="150" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <text x="768" y="682" font-size="23" font-weight="700" fill="#1F1E1D">Cowork</text>
+  <text x="768" y="716" font-size="18" fill="#5C5A54">Delegate long background work.</text>
+  <text x="768" y="746" font-size="17" fill="#8A8880">Read 40 PDFs, build a comparison</text>
+  <text x="768" y="770" font-size="17" fill="#8A8880">table, write the brief.</text>
+
+  <rect x="1150" y="640" width="380" height="150" rx="12" fill="#D97757"/>
+  <text x="1178" y="682" font-size="23" font-weight="700" fill="#FFFFFF">Code</text>
+  <text x="1178" y="716" font-size="18" fill="#FFFFFF">Act on your actual files.</text>
+  <text x="1178" y="746" font-size="17" fill="#FBEAE3">Clean the data, run the analysis,</text>
+  <text x="1178" y="770" font-size="17" fill="#FBEAE3">rebuild the figure. This guide.</text>
+
+  <text x="800" y="856" text-anchor="middle" font-size="17" fill="#A8A59C">Claude Code for Scientists and Academics — Figure 2</text>
+</svg>

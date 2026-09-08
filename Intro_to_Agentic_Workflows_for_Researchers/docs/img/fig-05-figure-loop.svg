@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" width="1200" height="1020"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="1020" fill="#F0EEE6"/>
+  <text x="600" y="58" text-anchor="middle" font-size="28" font-weight="700" fill="#1F1E1D">The figure loop</text>
+  <text x="600" y="92" text-anchor="middle" font-size="19" fill="#8A8880">why plotting is where this gets addictive</text>
+
+  <!-- guide circle -->
+  <circle cx="600" cy="560" r="300" fill="none" stroke="#E0DCD0" stroke-width="1.5" stroke-dasharray="3 9"/>
+
+  <!-- arcs -->
+  <path d="M750,300 A300,300 0 0 1 882,457" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(882,457) rotate(70)"/>
+  <path d="M882,663 A300,300 0 0 1 750,820" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(750,820) rotate(150)"/>
+  <path d="M450,820 A300,300 0 0 1 318,663" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(318,663) rotate(-110)"/>
+  <path d="M318,457 A300,300 0 0 1 450,300" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(450,300) rotate(-30)"/>
+
+  <!-- centre -->
+  <circle cx="600" cy="560" r="108" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <text x="600" y="540" text-anchor="middle" font-size="34" font-weight="700" fill="#D97757">~20s</text>
+  <text x="600" y="572" text-anchor="middle" font-size="17" fill="#5C5A54">per round</text>
+  <text x="600" y="598" text-anchor="middle" font-size="15" fill="#8A8880">not per afternoon</text>
+
+  <!-- node 1 top -->
+  <rect x="430" y="210" width="340" height="100" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <circle cx="430" cy="210" r="20" fill="#D97757"/><text x="430" y="217" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="600" y="252" text-anchor="middle" font-size="20" font-weight="600" fill="#1F1E1D">You describe the change</text>
+  <text x="600" y="280" text-anchor="middle" font-size="18" fill="#5C5A54">in plain words</text>
+
+  <!-- node 2 right -->
+  <rect x="735" y="510" width="340" height="100" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <circle cx="735" cy="510" r="20" fill="#D97757"/><text x="735" y="517" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="905" y="552" text-anchor="middle" font-size="20" font-weight="600" fill="#1F1E1D">Claude edits the</text>
+  <text x="905" y="580" text-anchor="middle" font-size="18" fill="#5C5A54">plotting code</text>
+
+  <!-- node 3 bottom -->
+  <rect x="430" y="810" width="340" height="100" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <circle cx="430" cy="810" r="20" fill="#D97757"/><text x="430" y="817" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="600" y="852" text-anchor="middle" font-size="20" font-weight="600" fill="#1F1E1D">It runs and renders</text>
+  <text x="600" y="880" text-anchor="middle" font-size="18" fill="#5C5A54">the figure</text>
+
+  <!-- node 4 left -->
+  <rect x="125" y="510" width="350" height="100" rx="12" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
+  <circle cx="125" cy="510" r="20" fill="#D97757"/><text x="125" y="517" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="300" y="552" text-anchor="middle" font-size="20" font-weight="600" fill="#1F1E1D">It looks at the result,</text>
+  <text x="300" y="580" text-anchor="middle" font-size="18" fill="#5C5A54">and so do you</text>
+
+  <!-- example progression -->
+  <text x="600" y="962" text-anchor="middle" font-size="18" font-style="italic" fill="#8A8880">"the x labels overlap"  →  "rotate them 45 degrees"  →  "now 300 dpi, single-column, fonts embedded"</text>
+  <text x="600" y="1000" text-anchor="middle" font-size="17" fill="#A8A59C">Claude Code for Scientists and Academics — Figure 5</text>
+</svg>
