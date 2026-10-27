@@ -31,7 +31,7 @@ This guide teaches you **Claude Code**, the part of the Claude desktop app that 
 
 | | Section | What you get |
 |---|---|---|
-| 1 | [What Claude Code actually is](#1-what-claude-code-actually-is) | The mental model, and which of the three tabs to use |
+| 1 | [What Claude Code actually is](#1-what-claude-code-actually-is) | The mental model, and when to use Chat versus Code |
 | 2 | [Setup in ten minutes](#2-setup-in-ten-minutes) | Install and sign in, no terminal |
 | 3 | [Your first session](#3-your-first-session) | Four dropdowns, one sentence, first result |
 | 4 | [The screen, explained](#4-the-screen-explained) | Every part of the window, in plain language |
@@ -67,35 +67,36 @@ For a researcher, the practical translation is this:
 
 <p align="center"><sub><b>Figure 1</b> · Chatbot vs. agent — <i>A chatbot hands you code and stops. An agent closes the loop — and you stay on the approving end of it.</i></sub></p>
 
-### 1.2 Three tabs: Chat, Cowork, and Code
+### 1.2 Two tabs: Chat and Code
 
-When you open the Claude desktop app you will see three tabs across the top. They are genuinely different tools, and picking the wrong one is the most common early mistake.
+When you open the Claude desktop app you will see two tabs across the top: **Chat** and **Code**. They are genuinely different tools, and picking the wrong one is the most common early mistake.
 
 ```mermaid
 flowchart TD
-    Q["What do you need right now?"] --> A{"Does it need to read or change<br>real files on your computer?"}
+    Q["What do you need right now?"] --> A{"Does it need to read, change, or run<br>real files on your computer?"}
     A -- "No" --> C["Chat tab"]
-    A -- "Yes" --> D{"Is it code, data, or a repository?"}
-    D -- "Yes" --> E["Code tab — Claude Code"]
-    D -- "No: documents, slides, literature briefs" --> F["Cowork tab"]
-    C --> C1["Explaining a concept, brainstorming,<br>reading a paper you paste in, tutoring"]
-    E --> E1["Analysis scripts, figures, notebooks,<br>simulations, debugging, reproducibility"]
-    F --> F1["Multi-step research briefs, reports,<br>spreadsheets, long background tasks"]
+    A -- "Yes" --> E["Code tab — Claude Code"]
+    C --> C1["Explaining a concept, brainstorming,<br>critiquing a draft you paste in, tutoring"]
+    E --> E1["Analysis scripts, figures, notebooks, manuscripts,<br>simulations, debugging, reproducibility"]
 ```
 
 | Tab | What it is | Reach for it when |
 |---|---|---|
-| **Chat** | Conversation, no file access — like [claude.ai](https://claude.ai) | "Explain the difference between a random-effects and fixed-effects model." "Critique this abstract." |
-| **Cowork** | An autonomous background agent working in its own sandboxed environment on longer, document-shaped tasks | "Read these 40 PDFs and produce a comparison table of their sample sizes and effect estimates." |
-| **Code** | Claude Code — direct, permissioned access to your actual project folder | "Take `raw_2024.csv`, clean it, and reproduce Figure 3 with the new subjects included." |
-
-Anthropic's own walkthrough of the three tabs is here: [Navigating the Claude desktop app](https://claude.com/resources/tutorials/navigating-the-claude-desktop-app). The rest of this guide is about the **Code** tab.
+| **Chat** | A conversation. It answers, but it does not open, edit, or run anything on your computer. Like [claude.ai](https://claude.ai). | "Explain the difference between a random-effects and fixed-effects model." "Critique this abstract." |
+| **Code** | Claude Code — an agent with direct, permissioned access to the project folder you choose. It reads your files, writes and runs code, checks the output, and shows you every change. | "Take `raw_2024.csv`, clean it, and reproduce Figure 3 with the new subjects included." |
 
 <p align="center">
-  <img src="docs/img/fig-02-three-tabs.svg" alt="The Claude desktop app's three tabs: Chat for conversation, Cowork for long background work, Code for acting on your files." width="100%">
+  <img src="docs/img/fig-02-chat-and-code.svg" alt="The Claude desktop app's two tabs: Chat for conversation, Code for acting on your files, with a note that Cowork is built on the same agent as Code." width="100%">
 </p>
 
-<p align="center"><sub><b>Figure 2</b> · The three tabs — <i>Picking the wrong tab is the most common early mistake. Code is the one with access to your files.</i></sub></p>
+<p align="center"><sub><b>Figure 2</b> · Chat and Code — <i>Picking the wrong tab is the most common early mistake. Code is the one that can act on your files.</i></sub></p>
+
+> [!NOTE]
+> **What about Cowork?** You may see [Cowork](https://claude.com/product/cowork) mentioned in Anthropic's materials, and older versions of the app gave it its own tab. It is not a souped-up chat: Cowork is a wrapper around the same agent that powers Code, so it can access local files, write and run code, launch subagents to work on pieces of a task in parallel, and carry long multi-step jobs to a finished deliverable. What it adds is packaging for delegated, document-shaped work.
+>
+> **For most researchers, using Code directly is the better choice.** Code gives you the same capabilities with the controls a scientist needs: you choose exactly which folder Claude can see, you set how much it may do without asking ([§5](#5-permission-modes-the-safety-dial)), and you review every change line by line in the diff view ([§4.2](#42-the-diff-view--your-review-surface)) before it touches a result. Everything in this guide assumes the **Code** tab.
+
+Anthropic's own tour of the desktop app is here: [Navigating the Claude desktop app](https://claude.com/resources/tutorials/navigating-the-claude-desktop-app).
 
 ### 1.3 What this looks like in real science
 
@@ -124,7 +125,7 @@ Or start from the single download page: **[claude.com/download](https://claude.c
 
 ### Step 2 — Sign in and open the Code tab
 
-Launch Claude, sign in with your Anthropic account, and click the **Code** tab at the top centre of the window.
+Launch Claude, sign in with your Anthropic account, and click the **Code** tab at the top of the window.
 
 If clicking **Code** asks you to upgrade, your plan does not include Claude Code yet — see [pricing](https://claude.com/pricing). If it asks you to sign in online, complete that and restart the app.
 
@@ -815,7 +816,7 @@ Each uses one palette — warm ground `#F0EEE6`, ink `#1F1E1D`, accent `#D97757`
 | # | File | Size | Used in |
 |---|---|---|---|
 | 1 | `fig-01-chatbot-vs-agent.svg` | 1600×880 | [§1.1](#11-the-one-sentence-version) |
-| 2 | `fig-02-three-tabs.svg` | 1600×900 | [§1.2](#12-three-tabs-chat-cowork-and-code) |
+| 2 | `fig-02-chat-and-code.svg` | 1600×900 | [§1.2](#12-two-tabs-chat-and-code) |
 | 3 | `fig-03-four-controls.svg` | 1600×660 | [§3.1](#31-the-four-things-you-set-before-you-type) |
 | 4 | `fig-04-code-tab-annotated.svg` | 1720×1000 | [§4](#4-the-screen-explained) |
 | 5 | `fig-05-figure-loop.svg` | 1200×1020 | [§6.3](#63-figures-for-publication) |
@@ -844,12 +845,13 @@ If you would rather have painted or photographic artwork than diagrams, the orig
 </details>
 
 <details>
-<summary><b>Figure 2 — The three tabs</b></summary>
+<summary><b>Figure 2 — Chat and Code</b></summary>
 
-> Annotated screenshot mock of the Claude desktop app window, macOS style, 1800×1100. Show the top tab bar with three tabs — "Chat", "Cowork", "Code" — with "Code" active and highlighted. Draw three curved callout arrows in terracotta (#D97757) pointing to each tab, each ending in a small rounded label box:
+> Annotated screenshot mock of the Claude desktop app window, macOS style, 1800×1100. Show the top tab bar with two tabs — "Chat" and "Code" — with "Code" active and highlighted. Draw two curved callout arrows in terracotta (#D97757) pointing to each tab, each ending in a small rounded label box:
 > - Chat → "Talk. No file access."
-> - Cowork → "Delegate. Long background work."
 > - Code → "Act on your actual files." (make this callout the visually dominant one)
+>
+> Beneath both, a slim muted note: "Cowork is no longer its own tab. It is built on the same agent as Code; most researchers should use Code directly."
 >
 > Blur or generically fill the window body — it should read as a generic project, not any specific one. Use placeholder file names like `analysis.py`, `data_2024.csv`, `figures/`. Clean, light UI, no personal information.
 
