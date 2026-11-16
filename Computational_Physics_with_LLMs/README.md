@@ -1,6 +1,7 @@
 # Computational Physics with LLMs
 
-https://github.com/user-attachments/assets/VIDEO_ID
+[https://github.com/user-attachments/assets/VIDEO_ID](https://github.com/user-attachments/assets/33283630-7d05-49d4-bc85-e857b9a56755
+)
 
 *Example output from Route A1. The uniform cloud from Section 3 (left) and a clumpy cloud (middle) collapse side by side, while the validation panel (right) tracks the half-mass radius and the width of the local density distribution against dashed analytic references. Your movie will differ in its details, and working out what the curves mean is part of the exercise.*
 
