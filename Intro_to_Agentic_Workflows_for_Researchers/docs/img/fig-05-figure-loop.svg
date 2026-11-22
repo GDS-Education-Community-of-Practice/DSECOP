@@ -10,16 +10,16 @@
   <!-- arcs -->
   <path d="M750,300 A300,300 0 0 1 882,457" fill="none" stroke="#D97757" stroke-width="3"/>
   <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(882,457) rotate(70)"/>
-  <path d="M882,663 A300,300 0 0 1 750,820" fill="none" stroke="#D97757" stroke-width="3"/>
-  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(750,820) rotate(150)"/>
+  <path d="M882,663 A300,300 0 0 1 793,790" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(793,790) rotate(140)"/>
   <path d="M450,820 A300,300 0 0 1 318,663" fill="none" stroke="#D97757" stroke-width="3"/>
   <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(318,663) rotate(-110)"/>
-  <path d="M318,457 A300,300 0 0 1 450,300" fill="none" stroke="#D97757" stroke-width="3"/>
-  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(450,300) rotate(-30)"/>
+  <path d="M318,457 A300,300 0 0 1 407,330" fill="none" stroke="#D97757" stroke-width="3"/>
+  <polygon points="0,-7 15,0 0,7" fill="#D97757" transform="translate(407,330) rotate(-40)"/>
 
   <!-- centre -->
   <circle cx="600" cy="560" r="108" fill="#FFFFFF" stroke="#D8D4C8" stroke-width="1.5"/>
-  <text x="600" y="540" text-anchor="middle" font-size="34" font-weight="700" fill="#D97757">~20s</text>
+  <text x="600" y="540" text-anchor="middle" font-size="34" font-weight="700" fill="#D97757">seconds</text>
   <text x="600" y="572" text-anchor="middle" font-size="17" fill="#5C5A54">per round</text>
   <text x="600" y="598" text-anchor="middle" font-size="15" fill="#8A8880">not per afternoon</text>
 

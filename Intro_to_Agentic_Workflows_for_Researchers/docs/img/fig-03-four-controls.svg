@@ -44,7 +44,7 @@
   <text x="370" y="450" text-anchor="middle" font-size="18" fill="#5C5A54">Start with Local.</text>
 
   <text x="656" y="392" text-anchor="middle" font-size="21" font-weight="700" fill="#1F1E1D">Project folder</text>
-  <text x="656" y="424" text-anchor="middle" font-size="18" fill="#5C5A54">What Claude can see.</text>
+  <text x="656" y="424" text-anchor="middle" font-size="18" fill="#5C5A54">The folder Claude works in.</text>
   <text x="656" y="450" text-anchor="middle" font-size="18" fill="#5C5A54">Pick it tight.</text>
 
   <text x="942" y="392" text-anchor="middle" font-size="21" font-weight="700" fill="#1F1E1D">Model</text>
@@ -56,8 +56,8 @@
   <text x="1228" y="450" text-anchor="middle" font-size="18" fill="#5C5A54">Start with Plan.</text>
 
   <rect x="250" y="500" width="1100" height="76" rx="12" fill="#E8E4D8" stroke="#C9C4B4" stroke-width="1.5"/>
-  <text x="800" y="533" text-anchor="middle" font-size="19" font-weight="600" fill="#3D3D3A">The project folder is a privacy control, not just an organisational one.</text>
-  <text x="800" y="561" text-anchor="middle" font-size="18" fill="#5C5A54">Claude cannot see anything outside the folder you select.</text>
+  <text x="800" y="533" text-anchor="middle" font-size="19" font-weight="600" fill="#3D3D3A">A tight project folder is a sensible privacy habit, not a guarantee.</text>
+  <text x="800" y="561" text-anchor="middle" font-size="18" fill="#5C5A54">Claude works inside it by default. It is a starting point, not a wall.</text>
 
   <text x="800" y="628" text-anchor="middle" font-size="17" fill="#A8A59C">Claude Code for Scientists and Academics — Figure 3</text>
 </svg>

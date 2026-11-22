@@ -51,13 +51,11 @@
 
   <line x1="906" y1="164" x2="906" y2="750" stroke="#E4E0D4" stroke-width="1.5"/>
   <text x="926" y="196" font-size="14" font-weight="700" fill="#3D3D3A">clean_data.py</text>
-  <rect x="1200" y="180" width="86" height="24" rx="6" fill="#FFFFFF" stroke="#D8D4C8"/>
-  <text x="1243" y="197" text-anchor="middle" font-size="12" fill="#5C5A54">Review code</text>
 
   <rect x="920" y="216" width="366" height="22" fill="#EAF6EC"/>
   <text x="930" y="232" font-size="13" fill="#1A7F37">+  df = df[df.temp_c.notna()]</text>
   <rect x="920" y="240" width="366" height="22" fill="#EAF6EC"/>
-  <text x="930" y="256" font-size="13" fill="#1A7F37">+  df = df[df.subject != 17]</text>
+  <text x="930" y="256" font-size="13" fill="#1A7F37">+  df = df[df.run != 17]</text>
   <rect x="920" y="264" width="366" height="22" fill="#FBECEA"/>
   <text x="930" y="280" font-size="13" fill="#C4462F">−  df = df.dropna()</text>
   <rect x="920" y="288" width="366" height="22" fill="#F7F5EE"/>
@@ -65,7 +63,7 @@
 
   <rect x="920" y="326" width="366" height="60" rx="8" fill="#FFF8E8" stroke="#E8C97A" stroke-width="1.5"/>
   <text x="932" y="348" font-size="12" font-weight="700" fill="#8A6D1F">Your comment</text>
-  <text x="932" y="370" font-size="12" fill="#7A6320">Subject 17 was excluded for equipment failure.</text>
+  <text x="932" y="370" font-size="12" fill="#7A6320">Run 17 was excluded for equipment failure.</text>
 
   <line x1="906" y1="404" x2="1300" y2="404" stroke="#E4E0D4" stroke-width="1.5"/>
   <text x="926" y="432" font-size="13" font-weight="600" fill="#8A8880">figure_3.pdf</text>
@@ -85,8 +83,8 @@
   <polygon points="380,240 366,232 366,248" fill="#D97757"/>
   <circle cx="278" cy="240" r="19" fill="#D97757"/><text x="278" y="247" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">1</text>
   <text x="240" y="234" text-anchor="end" font-size="21" font-weight="700" fill="#1F1E1D">Sessions</text>
-  <text x="240" y="264" text-anchor="end" font-size="17" fill="#5C5A54">One per task. Run several</text>
-  <text x="240" y="288" text-anchor="end" font-size="17" fill="#5C5A54">at once, each isolated.</text>
+  <text x="240" y="264" text-anchor="end" font-size="17" fill="#5C5A54">One per task. You can run</text>
+  <text x="240" y="288" text-anchor="end" font-size="17" fill="#5C5A54">several at once.</text>
 
   <path d="M556 427 L306 427" fill="none" stroke="#D97757" stroke-width="2.5"/>
   <polygon points="556,427 542,419 542,435" fill="#D97757"/>
@@ -107,7 +105,7 @@
   <circle cx="1416" cy="300" r="19" fill="#D97757"/><text x="1416" y="307" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">4</text>
   <text x="1454" y="294" font-size="21" font-weight="700" fill="#1F1E1D">The diff</text>
   <text x="1454" y="324" font-size="17" fill="#5C5A54">Green added, red removed.</text>
-  <text x="1454" y="348" font-size="17" fill="#5C5A54">Click any line to object;</text>
+  <text x="1454" y="348" font-size="17" fill="#5C5A54">Click + on a line to object;</text>
   <text x="1454" y="372" font-size="17" fill="#5C5A54">Claude reads it and revises.</text>
 
   <path d="M776 726 L776 812 L560 812" fill="none" stroke="#D97757" stroke-width="2.5"/>
@@ -115,7 +113,7 @@
   <circle cx="518" cy="812" r="19" fill="#D97757"/><text x="518" y="819" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">5</text>
   <text x="480" y="806" text-anchor="end" font-size="21" font-weight="700" fill="#1F1E1D">Mode and usage ring</text>
   <text x="480" y="836" text-anchor="end" font-size="17" fill="#5C5A54">How much Claude does alone,</text>
-  <text x="480" y="860" text-anchor="end" font-size="17" fill="#5C5A54">and how full this conversation is.</text>
+  <text x="480" y="860" text-anchor="end" font-size="17" fill="#5C5A54">and how much of your plan is used.</text>
 
   <text x="860" y="962" text-anchor="middle" font-size="17" fill="#A8A59C">Claude Code for Scientists and Academics — Figure 4</text>
 </svg>

@@ -39,7 +39,7 @@
   <text x="436" y="510" font-size="17" fill="#B4B1A8">Describe what you want to do...</text>
 
   <!-- leader lines -->
-  <path d="M740 150 L740 176 L545 176 L545 626" fill="none" stroke="#B9B5AA" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M740 150 L740 176 L396 176 L396 600 L545 600 L545 626" fill="none" stroke="#B9B5AA" stroke-width="2" stroke-dasharray="5 5"/>
   <path d="M860 168 L860 190 L1055 190 L1055 626" fill="none" stroke="#D97757" stroke-width="2.5"/>
   <polygon points="545,638 537,624 553,624" fill="#B9B5AA"/>
   <polygon points="1055,638 1046,622 1064,622" fill="#D97757"/>
@@ -59,7 +59,7 @@
 
   <!-- cowork footnote -->
   <rect x="310" y="808" width="980" height="44" rx="10" fill="#E8E4D8" stroke="#C9C4B4" stroke-width="1.5"/>
-  <text x="800" y="836" text-anchor="middle" font-size="16" fill="#5C5A54"><tspan font-weight="700" fill="#3D3D3A">Cowork</tspan> is no longer its own tab. It is built on the same agent as Code; most researchers should use Code directly.</text>
+  <text x="800" y="836" text-anchor="middle" font-size="16" fill="#5C5A54"><tspan font-weight="700" fill="#3D3D3A">Cowork</tspan> is built on the same agent as Code; most researchers should use Code directly.</text>
 
   <text x="800" y="884" text-anchor="middle" font-size="15" fill="#A8A59C">Claude Code for Scientists and Academics — Figure 2</text>
 </svg>

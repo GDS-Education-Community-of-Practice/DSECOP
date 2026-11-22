@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <sub>By Marko Ristić · Last checked against the official Claude Code documentation: November 2026</sub>
+</p>
+
+<p align="center">
   <a href="https://claude.com/download"><img alt="Download Claude" src="https://img.shields.io/badge/Download-Claude%20Desktop-D97757?style=flat-square"></a>
   <a href="https://code.claude.com/docs"><img alt="Docs" src="https://img.shields.io/badge/Docs-code.claude.com-1f2328?style=flat-square"></a>
   <a href="https://www.anthropic.com/science"><img alt="Anthropic Science" src="https://img.shields.io/badge/Anthropic-Science-6B5BD2?style=flat-square"></a>
@@ -23,7 +27,7 @@ This guide teaches you **Claude Code**, the part of the Claude desktop app that 
 **What you do *not* need to know:** the command line, Git, Python, or how to install software libraries. This guide will not teach you those things, and you do not need them. Claude Code exists precisely so that the technical layer stops being the barrier between you and your data.
 
 > [!IMPORTANT]
-> Claude Code is included in the Claude desktop app on a **Pro, Max, Team, or Enterprise** plan. See [plans and pricing](https://claude.com/pricing). Many universities now provide institutional access — check with your department before paying personally, and see [Claude for Education](https://claude.com/solutions/education) and the [Team plan for research labs](https://claude.com/programs/claude-team-plan-for-research-labs).
+> Claude Code is included in the Claude desktop app on a **Pro, Max, Ultra, Team, or Enterprise** plan. See [plans and pricing](https://claude.com/pricing). Many universities now provide institutional access — check with your department before paying personally, and see [Claude for Education](https://claude.com/solutions/education) and the [Team plan for research labs](https://claude.com/programs/claude-team-plan-for-research-labs).
 
 ---
 
@@ -55,7 +59,7 @@ This guide teaches you **Claude Code**, the part of the Claude desktop app that 
 
 **Claude Code is a research assistant that can open your files, write and run code, look at the result, and fix its own mistakes — while you watch and approve.**
 
-That last part matters. A chatbot gives you a block of code and wishes you luck. Claude Code takes the action itself: it opens your CSV, notices the date column is formatted three different ways, writes the cleaning step, runs it, sees the plot come out wrong, and corrects it. Anthropic's engineering team calls this being *agentic* — the ability to "read files, run commands, make changes, and autonomously work through problems," described in [Claude Code best practices](https://www.anthropic.com/engineering/claude-code-best-practices).
+That last part matters. A chatbot gives you a block of code and wishes you luck. Claude Code takes the action itself: it opens your CSV, notices the date column is formatted three different ways, writes the cleaning step, runs it, sees the plot come out wrong, and corrects it. Tools that work this way are called *agentic*. In the words of Anthropic's [desktop documentation](https://code.claude.com/docs/en/desktop), Claude "reads your project files, makes changes, and runs commands".
 
 For a researcher, the practical translation is this:
 
@@ -69,7 +73,7 @@ For a researcher, the practical translation is this:
 
 ### 1.2 Two tabs: Chat and Code
 
-When you open the Claude desktop app you will see two tabs across the top: **Chat** and **Code**. They are genuinely different tools, and picking the wrong one is the most common early mistake.
+When you open the Claude desktop app you will see tabs at the top of the sidebar. The two that matter here are **Chat** and **Code**. They are genuinely different tools, and picking the wrong one is the most common early mistake.
 
 ```mermaid
 flowchart TD
@@ -86,23 +90,23 @@ flowchart TD
 | **Code** | Claude Code — an agent with direct, permissioned access to the project folder you choose. It reads your files, writes and runs code, checks the output, and shows you every change. | "Take `raw_2024.csv`, clean it, and reproduce Figure 3 with the new subjects included." |
 
 <p align="center">
-  <img src="docs/img/fig-02-chat-and-code.svg" alt="The Claude desktop app's two tabs: Chat for conversation, Code for acting on your files, with a note that Cowork is built on the same agent as Code." width="100%">
+  <img src="docs/img/fig-02-chat-and-code.svg" alt="The Chat and Code tabs in the Claude desktop app: Chat for conversation, Code for acting on your files, with a note that Cowork is built on the same agent as Code." width="100%">
 </p>
 
 <p align="center"><sub><b>Figure 2</b> · Chat and Code — <i>Picking the wrong tab is the most common early mistake. Code is the one that can act on your files.</i></sub></p>
 
 > [!NOTE]
-> **What about Cowork?** You may see [Cowork](https://claude.com/product/cowork) mentioned in Anthropic's materials, and older versions of the app gave it its own tab. It is not a souped-up chat: Cowork is a wrapper around the same agent that powers Code, so it can access local files, write and run code, launch subagents to work on pieces of a task in parallel, and carry long multi-step jobs to a finished deliverable. What it adds is packaging for delegated, document-shaped work.
+> **What about Cowork?** You will also come across [Cowork](https://claude.com/product/cowork), both in the app and in Anthropic's materials. It is not a souped-up chat: Cowork is a wrapper around the same agent that powers Code, so it can access local files, write and run code, launch subagents to work on pieces of a task in parallel, and carry long multi-step jobs to a finished deliverable. What it adds is packaging for delegated, document-shaped work.
 >
-> **For most researchers, using Code directly is the better choice.** Code gives you the same capabilities with the controls a scientist needs: you choose exactly which folder Claude can see, you set how much it may do without asking ([§5](#5-permission-modes-the-safety-dial)), and you review every change line by line in the diff view ([§4.2](#42-the-diff-view--your-review-surface)) before it touches a result. Everything in this guide assumes the **Code** tab.
+> **For most researchers, using Code directly is the better choice.** Code gives you the same capabilities with the controls a scientist needs: you choose the folder Claude works in, you set how much it may do without asking ([§5](#5-permission-modes-the-safety-dial)), and you review every change line by line in the diff view ([§4.2](#42-the-diff-view--your-review-surface)) before it touches a result. Everything in this guide assumes the **Code** tab.
 
 Anthropic's own tour of the desktop app is here: [Navigating the Claude desktop app](https://claude.com/resources/tutorials/navigating-the-claude-desktop-app).
 
 ### 1.3 What this looks like in real science
 
-This is not speculative. Anthropic's [How scientists are using Claude to accelerate research and discovery](https://www.anthropic.com/news/accelerating-scientific-research) documents concrete cases: a genome-wide association study that normally takes months completed in about 20 minutes; 450 wearable-sensor files from 30 participants analysed in 35 minutes, a task estimated at three weeks by hand. At MIT's Cheeseman Lab, a principal investigator reviewing Claude's interpretation of CRISPR knockout clusters reported the recurring experience of *"I didn't notice that one!"*
+This is not speculative. Anthropic's [How scientists are using Claude to accelerate research and discovery](https://www.anthropic.com/news/accelerating-scientific-research) documents concrete cases from Biomni, an agentic platform from Stanford University that runs on Claude: a genome-wide association study that normally takes months completed in about 20 minutes; more than 450 wearable-sensor files from 30 people analysed in 35 minutes, a task estimated at three weeks for a human expert. At MIT's Cheeseman Lab, a principal investigator reviewing Claude's interpretation of CRISPR knockout clusters reported the recurring experience of *"I didn't notice that one!"*
 
-For heavier computational work, Anthropic's science blog post [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-Claude) describes a researcher using Claude Code to build a differentiable cosmological Boltzmann solver from scratch, reaching sub-percent agreement with the established reference implementation in days rather than months. The techniques from that post are distilled into [§9](#9-ten-habits-that-decide-your-results) below — particularly the idea of giving Claude a **test oracle**, a known-correct result it can check itself against.
+For heavier computational work, Anthropic's science blog post [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-claude) describes a researcher using Claude Code to build a differentiable cosmological Boltzmann solver from scratch, reaching sub-percent agreement with the established reference implementation in days rather than months. The techniques from that post are distilled into [§9](#9-ten-habits-that-decide-your-results) below — particularly the idea of giving Claude a **test oracle**, a known-correct result it can check itself against.
 
 Anthropic maintains a dedicated [Science blog](https://www.anthropic.com/research/introducing-anthropic-science) publishing exactly this kind of workflow write-up, and an [AI for Science program](https://www.anthropic.com/news/ai-for-science-program) that grants API credits to researchers at research institutions.
 
@@ -121,19 +125,19 @@ Anthropic maintains a dedicated [Science blog](https://www.anthropic.com/researc
 Or start from the single download page: **[claude.com/download](https://claude.com/download)**. If you have never installed an application before, the Claude Help Center has a step-by-step article with pictures: [Install Claude Desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop).
 
 > [!TIP]
-> **You do not need to install Python, Node.js, or the Claude Code command-line tool.** The desktop app contains Claude Code already. This is stated directly in the [desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart).
+> **You do not need to install Node.js or the Claude Code command-line tool.** The desktop app contains Claude Code already, as the [desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart) says. Local sessions do run your analysis with whatever Python or R is already on your computer.
 
 ### Step 2 — Sign in and open the Code tab
 
-Launch Claude, sign in with your Anthropic account, and click the **Code** tab at the top of the window.
+Launch Claude, sign in with your Anthropic account, and click the **Code** tab at the top of the sidebar.
 
 If clicking **Code** asks you to upgrade, your plan does not include Claude Code yet — see [pricing](https://claude.com/pricing). If it asks you to sign in online, complete that and restart the app.
 
-### Step 3 — Windows users only: install Git
+### Step 3 — Git (optional)
 
-On Windows, the Code tab requires **Git for Windows**. Download it from [git-scm.com/downloads/win](https://git-scm.com/downloads/win), run the installer accepting all defaults, and restart Claude.
+Current versions of the app start a local session without Git. You need it when a session runs in its own worktree (see [§6.8](#68-reproducibility-without-learning-git)), and for anything built on Git history, such as saving snapshots of your project. Most Macs already have it. On Windows, download **Git for Windows** from [git-scm.com/downloads/win](https://git-scm.com/downloads/win), run the installer accepting all defaults, and restart Claude.
 
-You will never have to *use* Git yourself. Claude Code uses it underneath to keep a safety net of your file history so that changes can always be undone. Most Macs already have it.
+You will never have to *use* Git yourself; Claude runs it for you.
 
 ---
 
@@ -147,7 +151,7 @@ Before your first message, four controls sit around the prompt box. Set them onc
 
 ```mermaid
 flowchart LR
-    A["1 · Environment<br>Where Claude runs"] --> B["2 · Project folder<br>What Claude can see"]
+    A["1 · Environment<br>Where Claude runs"] --> B["2 · Project folder<br>Where Claude works"]
     B --> C["3 · Model<br>Which Claude"]
     C --> D["4 · Permission mode<br>How much it does alone"]
     D --> E["Type your task<br>and press Enter"]
@@ -156,8 +160,8 @@ flowchart LR
 | Control | Set it to | Why |
 |---|---|---|
 | **Environment** | **Local** | Runs on your own laptop, using your real files. This is what you want to start. ([Cloud and SSH](#69-long-jobs-cloud-sessions-and-your-lab-server) come later.) |
-| **Project folder** | Click **Select folder** and choose the folder holding your project | Claude can only see inside this folder. Choosing a tight folder is a privacy control, not just an organisational one. |
-| **Model** | The default | You can change it mid-session from the dropdown next to the send button. |
+| **Project folder** | Click **Select folder** and choose the folder holding your project | Claude starts in this folder and works there by default. It is not a wall: depending on the permission mode, Claude can read files outside it, sometimes without asking. A tight folder is a sensible privacy habit, not a guarantee. |
+| **Model** | The default | You can change it mid-session from the model picker in the row under the prompt box. |
 | **Permission mode** | **Plan** for your first task | Claude will explore and propose an approach *without changing a single file*. See [§5](#5-permission-modes-the-safety-dial). |
 
 > [!TIP]
@@ -167,7 +171,7 @@ flowchart LR
   <img src="docs/img/fig-03-four-controls.svg" alt="The four controls set before a first message: environment, project folder, model, and permission mode." width="100%">
 </p>
 
-<p align="center"><sub><b>Figure 3</b> · The four controls around the prompt box — <i>Set these once. The project folder is the one that also functions as a privacy boundary.</i></sub></p>
+<p align="center"><sub><b>Figure 3</b> · The four controls around the prompt box — <i>Set these once. The project folder sets where Claude works by default.</i></sub></p>
 
 ### 3.2 Type one sentence
 
@@ -215,7 +219,7 @@ The Code tab is built from **panes** you can drag into any arrangement. You only
 
 ### 4.1 The prompt box
 
-Where you type. Two things make it far more powerful than a plain text box:
+Where you type. Three things make it far more powerful than a plain text box:
 
 - **`@` mentions a file.** Type `@` and start typing a filename to pull that exact file into the conversation. `@methods.tex`, `@run_02.csv`.
 - **The `+` button** opens attachments, [skills](#8-extending-claude-code), connectors, and plugins.
@@ -229,28 +233,28 @@ When Claude changes files, a small indicator appears showing lines added and rem
 
 This opens the diff view: a list of changed files on the left, and on the right, the changes themselves — added lines in green, removed lines in red. This is the single most important habit in this guide. It is where you do your job as the scientist.
 
-- **Click any line** to open a comment box. Type your objection — *"this drops rows where the value is exactly zero, which are real measurements"* — and press Enter.
+- **Hover over a line and click the +** beside its line number to open a comment box. Type your objection — *"this drops rows where the value is exactly zero, which are real measurements"* — and press Enter.
 - Comment on as many lines as you like, then submit them all at once with **Cmd+Enter** (Mac) or **Ctrl+Enter** (Windows).
 - Claude reads your comments and revises, producing a new diff to review.
 
-There is also a **Review code** button in the diff view's top-right, which asks Claude to critique its own changes before you commit to them. It focuses on real defects — logic errors, bugs, security issues — not formatting.
+You can also type `/code-review` in the prompt box to have Claude review its own changes before you commit to them. It looks for correctness bugs and reports what it finds in the conversation.
 
 ### 4.3 The other panes
 
-Open any of these from the **Views** menu in the session toolbar.
+Open any of these with the pane buttons at the top of the session, or from the **⋮** menu beside them.
 
 | Pane | Shortcut | Use it for |
 |---|---|---|
 | **Diff** | `Cmd+Shift+D` | Reviewing changes (above) |
 | **Browser** | `Cmd+Shift+B` | Viewing plots, PDFs, images, videos, HTML reports, and live web apps. Click any image or PDF path in the chat to open it here. |
 | **Terminal** | `Ctrl` + backtick | You will rarely need this. It is there if a collaborator gives you a command to paste. |
-| **File editor** | click any file path | Making a one-word spot edit yourself, then clicking **Save** |
+| **File editor** | click any file path | Making a one-word spot edit yourself; by default, edits save automatically |
 
-Press **Cmd+/** (Mac) or **Ctrl+/** (Windows) at any time for the full shortcut list.
+Press **Cmd+/** (Mac) or **Ctrl+/** (Windows) at any time for the full shortcut list. Where this guide gives only a Mac shortcut, replace **Cmd** with **Ctrl** on Windows.
 
-### 4.4 The usage ring, and what to do when it fills
+### 4.4 Context usage, and what to do when it fills
 
-Next to the model picker sits a small ring showing **context usage** — how full the current conversation's working memory is.
+Every session has a **context window**, the conversation's working memory. The small ring under the prompt box is not a gauge for it: click the ring to see your plan usage. To see how full the context is, look at the **Context** card in the session details panel beside the chat, or type `/context` for a breakdown. (Older versions of the app have no Context card; there, clicking the ring shows context usage too.)
 
 Every session starts fresh and gradually accumulates everything Claude has read. When it fills, Claude automatically summarises and continues. You can also trigger this yourself by typing `/compact`.
 
@@ -260,7 +264,7 @@ Every session starts fresh and gradually accumulates everything Claude has read.
 
 ## 5. Permission modes: the safety dial
 
-Claude Code can edit your files and run programs on your computer. **Permission modes** control how much of that it does without asking you first. Switch modes at any time with the selector next to the send button, or `Cmd+Shift+M`.
+Claude Code can edit your files and run programs on your computer. **Permission modes** control how much of that it does without asking you first. Switch modes at any time with the mode selector in the row under the prompt box, or `Cmd+Shift+M`.
 
 | Mode | What happens | When a researcher wants it |
 |---|---|---|
@@ -306,7 +310,7 @@ You have just done the documentation task that everyone in your lab has been avo
 
 ### 6.2 Cleaning and understanding data
 
-> *Read `survey_raw.csv` and give me a data audit: number of rows, what each column appears to contain, missing-value counts per column, duplicate records, values outside plausible ranges, and any column whose type is inconsistent across rows. Do not change the file.*
+> *Read `detector_runs_raw.csv` and give me a data audit: number of rows, what each column appears to contain, missing-value counts per column, duplicate records, values outside plausible ranges, and any column whose type is inconsistent across rows. Do not change the file.*
 
 Then, and this is the important half:
 
@@ -319,7 +323,7 @@ Then, and this is the important half:
 
 Figures are where Claude Code becomes viscerally useful, because the loop is visual and fast. Claude can generate a plot, open it in the Browser pane, look at it, and iterate.
 
-> *Plot mean response time by condition with 95% confidence intervals. Use a colourblind-safe palette. Label axes with units. Then show me the figure.*
+> *Plot mean count rate by detector with 95% confidence intervals. Use a colourblind-safe palette. Label axes with units. Then show me the figure.*
 
 > *The x-axis labels overlap. Rotate them 45 degrees and increase the figure width.*
 
@@ -359,7 +363,7 @@ Claude traces the error through your files, finds the root cause, and fixes it. 
 
 > *Explain that fix as if I have never programmed. Why did the original code fail, and why does yours not?*
 
-That request is not a waste of time — it is how you stop being dependent. Anthropic's [education research](https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude) found students overwhelmingly use Claude for higher-order creation and analysis, and the same holds for researchers: the value compounds when you understand the fix.
+That request is not a waste of time — it is how you stop being dependent. Anthropic's [education research](https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude) found that in student conversations Claude was mostly doing the higher-order work, creating and analysing, and it raised the concern that students may offload that thinking. Researchers face the same risk: the value compounds when you understand the fix.
 
 ### 6.7 Manuscripts, LaTeX, and slides
 
@@ -381,7 +385,7 @@ This is the section your future self and your reviewers care about most.
 
 > *Save a snapshot of the current state of this project so I can come back to it if I break something.*
 
-That second one is Git, without you needing to know that. Additionally, each session in the desktop app automatically works in its own isolated copy of your project — a [Git worktree](https://code.claude.com/docs/en/worktrees) — so exploratory work in one session cannot disturb another.
+That second one is Git, without you needing to know that. If the project is a Git repository, you can also turn on **Worktree** before you start a session. The session then works in its own isolated copy of your project, a [Git worktree](https://code.claude.com/docs/en/worktrees), so exploratory work in one session cannot disturb another. Worktree is off by default, and without it every session on a folder edits the same files. A worktree holds only what is committed to Git, so untracked files such as large data files are missing from it.
 
 ### 6.9 Long jobs, cloud sessions, and your lab server
 
@@ -393,19 +397,19 @@ flowchart TD
     S --> C["Cloud"]
     S --> H["SSH"]
     L --> L1["Your own laptop, your own files.<br>Everything stays on your machine."]
-    C --> C1["Anthropic's servers. Keeps running<br>after you close the app or shut the lid."]
+    C --> C1["Anthropic's servers, on a clone of a GitHub<br>repository. Keeps running after you<br>close the app or shut the lid."]
     H --> H1["Your lab server, a cloud VM,<br>or an HPC login node."]
 ```
 
-- **Cloud sessions** continue even if you close the app or shut down your computer. Check progress later from the app, from [claude.ai/code](https://claude.ai/code), or from the [Claude mobile app](https://code.claude.com/docs/en/mobile). Ideal for a long refactor or a large batch job.
+- **Cloud sessions** continue even if you close the app or shut down your computer. Check progress later from the app, from [claude.ai/code](https://claude.ai/code), or from the [Claude mobile app](https://code.claude.com/docs/en/mobile). Ideal for a long refactor or a large batch job. When you start one, you pick a GitHub repository instead of a folder, and the session works on a fresh clone of it. Anything that is not in that repository, including files that exist only on your laptop, is not there.
 - **SSH sessions** connect to a machine you already have access to — your group's server or a cluster login node. Claude Code installs itself on the remote machine automatically the first time you connect. If your institution gave you server credentials you have never used, ask your system administrator, then ask Claude in the Chat tab to help you understand what they sent.
-- **[Scheduled tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks)** run Claude on a recurring basis — a weekly re-run of your analysis as new data arrives, or a Monday-morning summary of what changed.
+- **[Scheduled tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks)** run Claude on a recurring basis — a weekly re-run of your analysis as new data arrives, or a Monday-morning summary of what changed. A task that runs on your own computer only fires while the app is open and the computer is awake; a cloud task runs either way.
 
-For the deeper patterns behind multi-day autonomous computational work — progress logs, checkpoints, verification loops — read [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-Claude) and [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents).
+For the deeper patterns behind multi-day autonomous computational work — progress logs, checkpoints, verification loops — read [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-claude) and [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents).
 
 ### 6.10 Running several things at once
 
-Click **+ New session** in the sidebar (`Cmd+N`). Each session is fully independent, with its own history and its own isolated copy of the project.
+Click **+ New session** in the sidebar (`Cmd+N`). Each session has its own history and context. Sessions on the same folder share its files unless you turn on **Worktree** ([§6.8](#68-reproducibility-without-learning-git)).
 
 A realistic academic afternoon:
 
@@ -415,7 +419,7 @@ A realistic academic afternoon:
 | 2 | Rebuilding Figure 4 to the journal's specification |
 | 3 | Checking the reference list against the manuscript |
 
-Hold **Cmd** (Mac) or **Ctrl** (Windows) and click a session in the sidebar to view two side by side. The app sends you a notification when a session finishes and you are looking elsewhere.
+Hold **Option** (Mac) or **Alt** (Windows) and click a session in the sidebar to view two side by side. The app sends you a notification when a session finishes and you are looking elsewhere.
 
 ---
 
@@ -443,15 +447,15 @@ Claude will explore the project and draft one for you. Then refine it with the t
 A `CLAUDE.md` for a real research project might read:
 
 ```markdown
-# Project: Thermal tolerance in reef fish
+# Project: Muon lifetime measurement
 
 ## Data rules
 - Never modify anything in `data/raw/`. Ever. Read-only.
 - Cleaned data goes in `data/clean/` and is regenerated by `clean.py`.
-- Subject 017 was excluded for equipment failure. Keep the exclusion.
+- Run 017 was excluded for equipment failure. Keep the exclusion.
 
 ## Analysis conventions
-- All temperatures are Celsius. All times are UTC.
+- All decay times are in microseconds. All timestamps are UTC.
 - Error bars are 95% CI unless stated otherwise.
 - Figures go in `figures/`, 300 dpi, colourblind-safe palettes only.
 
@@ -502,16 +506,16 @@ Click **+** → **Plugins** → **Add plugin** to browse the official Anthropic 
 The gap between researchers who find Claude Code transformative and those who find it disappointing is almost entirely these habits. Most come from Anthropic's [best practices for Claude Code](https://code.claude.com/docs/en/best-practices).
 
 ### 9.1 Plan before you code
-Ask for a plan and read it. Anthropic's own guidance is blunt about this: without an explicit research-and-plan step, Claude jumps straight to writing a solution, and the results are measurably worse on anything requiring thought. In research code the conceptual error is the expensive one, and the plan is where you catch it.
+Ask for a plan and read it. Anthropic's [documentation](https://code.claude.com/docs/en/desktop#choose-a-permission-mode) recommends starting complex tasks in Plan mode, so that Claude maps out an approach before it changes anything. In research code the conceptual error is the expensive one, and the plan is where you catch it.
 
 ### 9.2 Give it the scientific context, not just the task
-*"Fit a model to this data"* produces something. *"These are repeated measurements from 24 participants, three sessions each, and I need to account for the within-subject correlation"* produces the right thing. The domain knowledge is the part only you have.
+*"Fit a model to this data"* produces something. *"These are count rates from 12 runs on three detectors, and I need to account for each detector's own background rate"* produces the right thing. The domain knowledge is the part only you have.
 
 ### 9.3 One question per session
-When you move to a different task, open a new session. A fresh context outperforms a crowded one — and it means the reference-checking session cannot accidentally touch your analysis code.
+When you move to a different task, open a new session. A fresh context outperforms a crowded one.
 
 ### 9.4 Give Claude something to check itself against
-This is the highest-leverage habit in scientific computing, and the central lesson of Anthropic's [long-running Claude](https://www.anthropic.com/research/long-running-Claude) write-up: give the agent a **test oracle**, an independent way to tell whether it is right.
+This is the highest-leverage habit in scientific computing, and the central lesson of Anthropic's [long-running Claude](https://www.anthropic.com/research/long-running-claude) write-up: give the agent a **test oracle**, an independent way to tell whether it is right.
 
 In practice, that means one of:
 
@@ -565,11 +569,12 @@ Read the specifics, because they depend on your plan: **[Claude Code data usage]
 The short version, as of writing:
 
 - **Commercial plans** (Team, Enterprise, API): Anthropic does not train generative models on your code or prompts under commercial terms unless your organisation has opted in.
-- **Consumer plans** (Pro, Max): whether your data is used to improve models is a setting you control, at [claude.ai/settings/data-privacy-controls](https://claude.ai/settings/data-privacy-controls). Retention differs depending on that setting.
+- **Consumer plans** (Pro, Max, Ultra): whether your data is used to improve models is a setting you control, at [claude.ai/settings/data-privacy-controls](https://claude.ai/settings/data-privacy-controls). Retention differs depending on that setting.
 - Session transcripts are also stored **locally** on your own machine in plain text.
+- **Cloud sessions** ([§6.9](#69-long-jobs-cloud-sessions-and-your-lab-server)) clone your repository into a virtual machine on Anthropic's servers, and Anthropic also stores the session transcript.
 
 > [!CAUTION]
-> **If you hold data under an ethics protocol, a data-use agreement, or clinical/participant confidentiality obligations, do not decide this yourself.** Human-subjects data, patient records, unpublished data governed by a DUA, and export-controlled material all carry constraints that predate this tool. Talk to your IRB, data steward, or research computing office first, and note that choosing a narrow project folder in [§3.1](#31-the-four-things-you-set-before-you-type) limits what Claude can see in the first place.
+> **If you hold data under an ethics protocol, a data-use agreement, or clinical/participant confidentiality obligations, do not decide this yourself.** Human-subjects data, patient records, unpublished data governed by a DUA, and export-controlled material all carry constraints that predate this tool. Talk to your IRB, data steward, or research computing office first, and note that choosing a narrow project folder in [§3.1](#31-the-four-things-you-set-before-you-type) narrows what Claude works with by default, though it is not a hard barrier.
 
 ### 10.4 Reproducibility is a feature here, not a cost
 
@@ -581,9 +586,9 @@ A worthwhile side effect: because Claude Code writes the analysis as files rathe
 
 | Symptom | Fix |
 |---|---|
-| **The Code tab asks me to upgrade** | Claude Code needs a Pro, Max, Team, or Enterprise plan. See [pricing](https://claude.com/pricing). |
-| **The Code tab won't work on Windows** | Install [Git for Windows](https://git-scm.com/downloads/win) and restart Claude. |
-| **Claude can't find my file** | It can only see inside the project folder you selected. Start a new session with the right folder, or use `@` to name the file exactly. |
+| **The Code tab asks me to upgrade** | Claude Code needs a Pro, Max, Ultra, Team, or Enterprise plan. See [pricing](https://claude.com/pricing). |
+| **The app says "Git is required"** | Sessions that run in their own worktree need Git. Install Git ([Git for Windows](https://git-scm.com/downloads/win) on Windows) and try again. If you are on Windows and not using worktrees, update the app; older versions asked for Git before any local session. |
+| **Claude can't find my file** | It works from the project folder you selected. Start a new session with the right folder, or use `@` to name the file exactly. |
 | **It ignored my instruction** | Was it in the conversation only? Put it in `CLAUDE.md`. Then check with `/context` that the file actually loaded. Be more specific — instructions that can be checked are followed more reliably. |
 | **It forgot something we discussed** | The conversation was summarised when context filled. Anything that must persist belongs in `CLAUDE.md`. |
 | **It changed something I didn't want** | Open the diff, comment on the exact line, and press Cmd/Ctrl+Enter. Or ask: *"undo that last change."* |
@@ -600,14 +605,14 @@ A worthwhile side effect: because Claude Code writes the analysis as files rathe
 |---|---|
 | **Agent** | Software that takes actions on its own toward a goal, rather than just answering. |
 | **Session** | One conversation about one task, with its own memory and its own set of changes. |
-| **Project folder** | The folder you point Claude at. It cannot see outside it. |
+| **Project folder** | The folder you point Claude at. It works there by default but can reach outside it; how often it asks first depends on the permission mode. |
 | **Prompt** | What you type. |
-| **Context / context window** | The conversation's working memory. It fills up; the ring by the model picker shows how full. |
+| **Context / context window** | The conversation's working memory. It fills up; the Context card beside the chat shows how full. |
 | **Diff** | A side-by-side view of what changed: green added, red removed. |
 | **Permission mode** | The dial controlling how much Claude does without asking. |
 | **Local / Cloud / SSH** | Whether the work runs on your laptop, Anthropic's servers, or a remote machine you have access to. |
 | **Terminal / command line** | The text-based way of controlling a computer. You are avoiding it. It has a pane in the app if you ever need it. |
-| **Git** | A system that records the history of your files so any change can be undone. Claude uses it for you. |
+| **Git** | A system that saves snapshots of your files so you can go back to an earlier one. Claude runs it for you. |
 | **Repository (repo)** | A folder whose history Git is tracking. |
 | **Commit** | Saving a snapshot into that history. |
 | **CLAUDE.md** | A plain text file of standing instructions that Claude reads at the start of every session. |
@@ -638,7 +643,7 @@ A worthwhile side effect: because Claude Code writes the analysis as files rathe
 |---|---|
 | [Anthropic Science](https://www.anthropic.com/science) | The hub for Anthropic's scientific work |
 | [Anthropic's Science Blog](https://www.anthropic.com/research/introducing-anthropic-science) | Workflow write-ups by researchers, in detail |
-| [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-Claude) | The single most useful post for computational research |
+| [Long-running Claude for scientific computing](https://www.anthropic.com/research/long-running-claude) | The single most useful post for computational research |
 | [How scientists are using Claude](https://www.anthropic.com/news/accelerating-scientific-research) | Case studies from Stanford, MIT, and others |
 | [Claude Science](https://claude.com/product/claude-science) | The dedicated research workbench (beta) |
 | [Claude for Life Sciences](https://www.anthropic.com/news/claude-for-life-sciences) | Domain connectors and integrations |
@@ -659,7 +664,6 @@ A worthwhile side effect: because Claude Code writes the analysis as files rathe
 
 | Resource | Why |
 |---|---|
-| [Claude Code best practices (engineering blog)](https://www.anthropic.com/engineering/claude-code-best-practices) | The canonical deep dive |
 | [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | For multi-day autonomous compute |
 | [Introducing Agent Skills](https://claude.com/blog/skills) | What skills are and how to build one |
 | [Anthropic Academy](https://www.anthropic.com/learn/build-with-claude) | Structured courses |
@@ -825,83 +829,7 @@ The flowcharts throughout the guide are [Mermaid](https://mermaid.js.org/) diagr
 
 ### Changing a figure
 
-Open a Claude Code session on this repository and say what you want, e.g. *"in `docs/img/fig-03-four-controls.svg`, change the permission-mode pill from Plan to Manual and update the caption underneath it."* The files are small and heavily commented by structure, so edits are safe.
-
-### Regenerating them as illustrations instead
-
-If you would rather have painted or photographic artwork than diagrams, the original design briefs are preserved below. Each can be handed to an image-generation model as-is.
-
-<details>
-<summary><b>Figure 1 — Chatbot vs. agent</b></summary>
-
-> Create a clean side-by-side comparison illustration, 1600×900, warm neutral background (#F0EEE6), Anthropic-style flat editorial illustration with a single accent color (terracotta #D97757) and dark charcoal text.
->
-> **Left panel, labelled "A chatbot":** a speech bubble containing a small block of generic code, and beneath it a researcher figure at a desk looking uncertain, with a dotted line labelled "you do the rest" leading to a pile of icons: a file, a terminal window, an error symbol.
->
-> **Right panel, labelled "An agent (Claude Code)":** a loop diagram — a folder icon → a code icon → a "run" play icon → a chart icon → an eye icon → back to the code icon. Label the loop "reads → writes → runs → checks → fixes". The researcher figure sits calmly beside the loop with a single checkmark labelled "you approve".
->
-> No text other than the labels described. Keep it uncluttered, generous whitespace, thin 2px line weight.
-
-</details>
-
-<details>
-<summary><b>Figure 2 — Chat and Code</b></summary>
-
-> Annotated screenshot mock of the Claude desktop app window, macOS style, 1800×1100. Show the top tab bar with two tabs — "Chat" and "Code" — with "Code" active and highlighted. Draw two curved callout arrows in terracotta (#D97757) pointing to each tab, each ending in a small rounded label box:
-> - Chat → "Talk. No file access."
-> - Code → "Act on your actual files." (make this callout the visually dominant one)
->
-> Beneath both, a slim muted note: "Cowork is no longer its own tab. It is built on the same agent as Code; most researchers should use Code directly."
->
-> Blur or generically fill the window body — it should read as a generic project, not any specific one. Use placeholder file names like `analysis.py`, `data_2024.csv`, `figures/`. Clean, light UI, no personal information.
-
-</details>
-
-<details>
-<summary><b>Figure 3 — The four controls around the prompt box</b></summary>
-
-> Annotated UI diagram, 1800×700, light theme, macOS style. Show a wide rounded prompt-input box with placeholder text "Describe what you want to do…". Around and below it, render four small control pills exactly as a modern chat app would: an environment selector reading "Local", a folder pill reading "chapter3", a model dropdown, and a permission-mode selector reading "Plan".
->
-> Number each control 1–4 in terracotta (#D97757) circular badges with leader lines out to short labels in the margin:
-> 1. "Where Claude runs — start with Local"
-> 2. "What Claude can see — pick a tight folder"
-> 3. "Which Claude — the default is fine"
-> 4. "How much it does alone — start with Plan"
->
-> Generous whitespace, no other UI chrome, nothing project-specific.
-
-</details>
-
-<details>
-<summary><b>Figure 4 — The Code tab, annotated</b></summary>
-
-> A full-window annotated screenshot mock of the Claude Code desktop interface, 2000×1250, light theme. Layout: left sidebar with a session list; a large centre chat pane; a right pane split horizontally into a diff view (top, showing green added lines and red removed lines) and a chart preview (bottom, a simple scatter plot).
->
-> Add five numbered terracotta (#D97757) callouts with thin leader lines:
-> 1. Sidebar → "Sessions — one per task, run several at once"
-> 2. Prompt box → "Where you type. @ pulls in a file, + adds skills and tools"
-> 3. Diff stats indicator showing "+34 −6" → "Every change Claude made. Click to review."
-> 4. Diff pane → "Green is added, red is removed. Click any line to comment."
-> 5. Usage ring near the model picker → "How full this conversation's memory is"
->
-> Use only generic placeholder content: file names like `clean_data.py`, `figures.py`, `notes.md`. No real data, no personal information, no identifiable project.
-
-</details>
-
-<details>
-<summary><b>Figure 5 — The figure iteration loop</b></summary>
-
-> A circular four-step loop diagram, 1400×1400, warm background (#F0EEE6), terracotta (#D97757) accent, flat editorial style with thin line weights.
->
-> Four nodes arranged in a circle, connected by curved arrows clockwise:
-> 1. A speech bubble icon — "You describe the change in words"
-> 2. A code bracket icon — "Claude edits the plotting code"
-> 3. A play/run icon — "It runs and renders the figure"
-> 4. An eye icon over a small chart — "It looks at the result, and so do you"
->
-> In the centre of the circle, a small stopwatch icon with the caption "≈ 20 seconds per round". Three small example thumbnails outside the loop, showing a plot progressively improving: overlapping labels → rotated labels → publication-ready. No real data values.
-
-</details>
+Open a Claude Code session on this repository and say what you want, e.g. *"in `docs/img/fig-03-four-controls.svg`, change the permission-mode pill from Plan to Manual and update the caption underneath it."* The files are small plain-text SVG, so edits are safe.
 
 > [!WARNING]
 > If you replace figures 2 or 4 with real screenshots, use a throwaway project containing dummy files. A screenshot of a live session shows real file names and real data, which is a privacy problem in a public repository and a maintenance problem the next time the interface changes.
