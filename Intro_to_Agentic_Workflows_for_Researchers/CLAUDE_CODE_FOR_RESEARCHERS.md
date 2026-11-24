@@ -396,7 +396,7 @@ flowchart TD
     S["Where should this run?"] --> L["Local"]
     S --> C["Cloud"]
     S --> H["SSH"]
-    L --> L1["Your own laptop, your own files.<br>Everything stays on your machine."]
+    L --> L1["Your own laptop, your own files.<br>Everything located on your machine."]
     C --> C1["Anthropic's servers, on a clone of a GitHub<br>repository. Keeps running after you<br>close the app or shut the lid."]
     H --> H1["Your lab server, a cloud VM,<br>or an HPC login node."]
 ```
