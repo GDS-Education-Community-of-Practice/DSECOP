@@ -3,6 +3,7 @@ This repository contains data science educational materials for physics courses 
 ## Table of Contents
 
 * DSECOP 103 [Claude Code for Scientists and Academics](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Agentic_Workflows_for_Researchers) by Marko Ristić (2026)
+* DSECOP 260 [Computational Physics with LLMs](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Computational_Physics_with_LLMs) by Marko Ristić (2026)
 * DSECOP 102 [The Professor's Module](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/The_Professors_Module) by Julie Butler (2023)
 * DSECOP 160 [Outlier Analysis](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Outlier_Analysis) by Ashley Dale (2023)
 * DSECOP 170 [Introduction to Error Reduction Techniques](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Error_Reduct_Tech) by Richard Harry (2023)
