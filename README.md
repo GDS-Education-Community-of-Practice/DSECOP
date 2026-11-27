@@ -7,6 +7,7 @@ This repository contains data science educational materials for physics courses 
 * DSECOP 103 [Claude Code for Scientists and Academics](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Agentic_Workflows_for_Researchers) by Marko Ristić (2026)
 * DSECOP 110 [Intro to Data Processing with Histograms](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Data_Processing_with_Histograms) by Radha Mastandrea (2022)
 * DSECOP 120 [Exploratory Data Analysis](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Exploratory_Data_Analysis) by Radha Mastandrea (2022)
+* DSECOP 130 [Lunar Flyby with LLMs](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Lunar_Flyby_with_LLMs) by Vladimir Strokov (2026)
 * DSECOP 140 [Machine Learning Workflow](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Machine_Learning_Workflow) by Julie Butler (2022)
 * DSECOP 150 [Intro to Classification Algorithms](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Intro_to_Classification_Algorithms) by Richard Harry (2023)
 * DSECOP 160 [Outlier Analysis](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Outlier_Analysis) by Ashley Dale (2023)
