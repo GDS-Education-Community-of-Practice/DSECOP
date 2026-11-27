@@ -19,6 +19,7 @@ This repository contains data science educational materials for physics courses 
 * DSECOP 236 [Gaussian Processes and the Schrödinger Equation](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Gaussian_Processes_and_Schrodinger_Equation) by Karan Shah (2023)
 * DSECOP 240 [Symbolic Regression](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Symbolic_Regression) by Joseph Dominicus Lap (2023)
 * DSECOP 250 [Automatic Differentiation](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Automatic_Differentiation) by Connor Robertson (2023)
+* DSECOP 260 [Computational Physics with LLMs](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Computational_Physics_with_LLMs) by Marko Ristić (2026)
 * DSECOP 280 [Automated Object Detection](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Automated_Object_Detection) by Karan Shah (2023)
 * DSECOP 290 [Time Series Analysis and Forecasting](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Time_Series_Analysis_and_Forecasting) by Connor Robertson (2023)
 * DSECOP 320 [Connecting Monte Carlo to Modern AI](https://github.com/GDS-Education-Community-of-Practice/DSECOP/tree/main/Connecting_MonteCarlo_to_ModernAI) by Ashley Dale (2023)
